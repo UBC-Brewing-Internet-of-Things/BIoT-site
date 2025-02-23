@@ -4,99 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruitment - Brewing IoT</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F5ECE5;
-        }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px 20px;
-            background-color: #E6D6CC;
-        }
-        .navbar a {
-            text-decoration: none;
-            color: black;
-            padding: 10px 15px;
-            font-weight: bold;
-        }
-        .navbar a.sponsor {
-            background-color: black;
-            color: white;
-            border-radius: 5px;
-            padding: 10px 15px;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-        }
-        .content-section {
-            background-color: #E6D6CC;
-            padding: 50px;
-            margin: 20px;
-            border-radius: 10px;
-        }
-        .footer {
-            background-color: #3E3E3E;
-            padding: 40px 20px;
-            color: white;
-            text-align: center;
-            font-size: 14px;
-        }
-        .footer div {
-            margin-bottom: 15px;
-        }
-        .button {
-            background-color: black;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="team.html">Team</a>
-        <a href="recruitment.html">Recruitment</a>
-        <a href="faq.html">FAQ</a>
-        <a href="sponsor.html" class="sponsor">Sponsor Us</a>
+  <div class="navbar">
+    <div class="navbar-links">
+      <p>logo</p>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="recruitment.html">Recruitment</a>
+      <a href="faq.html">FAQ</a>
+      <a href="sponsor.html" class="sponsor">Sponsor Us</a>
     </div>
+  </div>
     
-    <div class="container">
-        <h1>We Are Hiring!</h1>
-        <div class="content-section"></div>
-        <h2>Interested?</h2>
-        <a href="#" class="button">Join Us!</a>
+  <div class="join-us-container">
+    <div class="join-us">
+      <h2>Interested?</h2>
+      <div class="join-button">
+        <a href="#">Join Us!</a>
+      </div>
     </div>
+  </div>
     
-    <div class="footer">
-        <div>
-            <strong>Resources</strong><br>
-            Github
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h1>Brewing</h1>
+          <p>Internet of Things</p>
         </div>
-        <div>
-            <strong>Contact</strong><br>
-            Sponsorships | General Inquiries
+  
+        <div class="footer-links">
+          <div>
+            <h3>Resources</h3>
+            <a href="#">Github</a>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <a href="#">Sponsorships</a><br>
+            <a href="#">General Inquiries</a>
+          </div>
+          <div>
+            <h3>Socials</h3>
+            <a href="#">Instagram</a><br>
+            <a href="#">LinkedIn</a>
+          </div>
         </div>
-        <div>
-            <strong>Socials</strong><br>
-            Instagram | LinkedIn
+  
+        <div class="footer-newsletter">
+          <h3>Join our newsletter</h3>
+          <div class="newsletter-box">
+            <input type="email" placeholder="Email Address">
+            <button>Submit</button>
+          </div>
         </div>
-        <div>
-            <strong>Join our newsletter</strong><br>
-            <input type="email" placeholder="Email Address"> <button>Submit</button>
-        </div>
-        <p>&copy; 2024 UBC Brewing Internet of Things</p>
-    </div>
+      </div>
+      <p class="footer-copy">@ 2024 UBC Brewing Internet of Things</p>
+    </footer>
 </body>
 </html>
