@@ -419,17 +419,19 @@ body {
   font-size: 18px;
 }
 
-.container {
+/* .container {
   width: 90%;
   max-width: 1200px;
   margin: 20px auto;
   text-align: center;
-}
+} */
 
 /* team -------------------------------------------------------- */
 
 .team-section {
-  margin: 50px 0;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 100px;
 }
 
 .team-section h2 {
@@ -442,6 +444,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   justify-items: center;
+}
+
+.full-team-image {
+  width: 800px;
+  height: fit-content;
 }
 
 .team-member {
