@@ -7,92 +7,142 @@
     <title>Projects - Brewing IoT</title>
 </head>
 <body>
-  <div class="navbar">
-    <div class="navbar-links">
-      <p>logo</p>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="team.html">Team</a>
-      <a href="recruitment.html">Recruitment</a>
-      <a href="faq.html">FAQ</a>
-      <a href="sponsor.html" class="sponsor">Sponsor Us</a>
+    <div class="navbar">
+        <div class="navbar-links">
+            <p>logo</p>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="recruitment.html">Recruitment</a>
+            <a href="faq.html">FAQ</a>
+            <a href="sponsor.html" class="sponsor">Sponsor Us</a>
+        </div>
     </div>
-  </div>
     
     <div class="container">
         <div class="header">
-          <h1>Check Out Our Projects!</h1>
-          <p></p>
+            <h1>Check Out Our Projects</h1>
         </div>
+        
         <div class="projects">
-            <div class="project">
+
+            <div class="filter-container">
+              <button class="filter-btn active" data-category="all">All</button>
+              <button class="filter-btn" data-category="lab">Lab Team</button>
+              <button class="filter-btn" data-category="instrumentation">Instrumentation Team</button>
+              <button class="filter-btn" data-category="brew">Brew Team</button>
+            </div>
+
+            <div class="project" data-category="lab">
                 <div class="text">
-                    <h3>Project <span style="float: right;">May 2024</span></h3>
-                    <strong>Lab Team | Instrumentation Team</strong>
-                    <p>Project description Project description Project description.</p>
+                    <h3>Project <span class="project-date">May 2024</span></h3>
+                    <strong>Lab Team</strong>
+                    <p>Project description for Lab Team.</p>
                 </div>
                 <div class="image-placeholder"></div>
             </div>
-            <div class="project">
+            
+            <div class="project" data-category="instrumentation">
                 <div class="text">
-                    <h3>Project <span style="float: right;">May 2024</span></h3>
-                    <strong>Lab Team | Instrumentation Team</strong>
-                    <p>Project description Project description Project description.</p>
+                    <h3>Project <span class="project-date">May 2024</span></h3>
+                    <strong>Instrumentation Team</strong>
+                    <p>Project description for Instrumentation Team.</p>
                 </div>
                 <div class="image-placeholder"></div>
             </div>
-            <div class="project">
+            
+            <div class="project" data-category="lab instrumentation">
                 <div class="text">
-                    <h3>Project <span style="float: right;">May 2024</span></h3>
+                    <h3>Project <span class="project-date">May 2024</span></h3>
                     <strong>Lab Team | Instrumentation Team</strong>
-                    <p>Project description Project description Project description.</p>
+                    <p>Project description for both teams.</p>
                 </div>
                 <div class="image-placeholder"></div>
             </div>
         </div>
+        
         <div class="join-us-container">
-          <div class="join-us">
-            <h2>Interested?</h2>
-            <div class="join-button">
-              <a href="#">Join Us!</a>
+            <div class="join-us">
+                <h2>Interested?</h2>
+                <div class="join-button">
+                    <a href="#">Join Us!</a>
+                </div>
             </div>
-          </div>
         </div>
     </div>
     
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <h1>Brewing</h1>
-          <p>Internet of Things</p>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>Brewing</h1>
+                <p>Internet of Things</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Resources</h3>
+                    <a href="#">Github</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <a href="#">Sponsorships</a><br>
+                    <a href="#">General Inquiries</a>
+                </div>
+                <div>
+                    <h3>Socials</h3>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Join our newsletter</h3>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Email Address">
+                    <button>Submit</button>
+                </div>
+            </div>
         </div>
-  
-        <div class="footer-links">
-          <div>
-            <h3>Resources</h3>
-            <a href="#">Github</a>
-          </div>
-          <div>
-            <h3>Contact</h3>
-            <a href="#">Sponsorships</a><br>
-            <a href="#">General Inquiries</a>
-          </div>
-          <div>
-            <h3>Socials</h3>
-            <a href="#">Instagram</a><br>
-            <a href="#">LinkedIn</a>
-          </div>
-        </div>
-  
-        <div class="footer-newsletter">
-          <h3>Join our newsletter</h3>
-          <div class="newsletter-box">
-            <input type="email" placeholder="Email Address">
-            <button>Submit</button>
-          </div>
-        </div>
-      </div>
-      <p class="footer-copy">@ 2024 UBC Brewing Internet of Things</p>
+        <p class="footer-copy">@ 2024 UBC Brewing Internet of Things</p>
     </footer>
+
+    <script>
+        const buttons = document.querySelectorAll(".filter-btn");
+        const projects = document.querySelectorAll(".project");
+        let activeFilters = new Set();
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                let category = this.getAttribute("data-category");
+                
+                if (category === "all") {
+                    activeFilters.clear();
+                    buttons.forEach(btn => btn.classList.remove("active"));
+                    this.classList.add("active");
+                } else {
+                    if (activeFilters.has(category)) {
+                        activeFilters.delete(category);
+                        this.classList.remove("active");
+                    } else {
+                        activeFilters.add(category);
+                        this.classList.add("active");
+                        document.querySelector(".filter-btn[data-category='all']").classList.remove("active");
+                    }
+                }
+                
+                if (activeFilters.size === 0) {
+                    document.querySelector(".filter-btn[data-category='all']").classList.add("active");
+                }
+                
+                projects.forEach(project => {
+                    let categories = project.getAttribute("data-category").split(" ");
+                    
+                    if (activeFilters.size === 0 || categories.some(cat => activeFilters.has(cat))) {
+                        project.style.display = "flex";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
