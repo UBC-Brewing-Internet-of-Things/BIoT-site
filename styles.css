@@ -398,3 +398,80 @@ body {
   font-size: 24px;
   line-height: 36px;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF5F1;
+}
+
+.navbar {
+  background-color: #F0E2DE;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: black;
+  font-size: 18px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+}
+
+/* team -------------------------------------------------------- */
+
+.team-section {
+  margin: 50px 0;
+}
+
+.team-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.team-member {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  width: 180px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.team-info {
+  margin-top: 10px;
+}
+
+.team-info h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.team-info p {
+  font-size: 14px;
+  color: gray;
+}
