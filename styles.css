@@ -37,6 +37,13 @@ body {
   font-family: 'EB Garamond', serif;
   font-size: 20px;
   width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.navbar-links a:hover {
+  background-color: #CFC6C1;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar a.sponsor {
