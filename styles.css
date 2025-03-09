@@ -11,6 +11,13 @@ body {
   background-color: #FFF5F1;
 }
 
+
+
+/* - responsive ------------------------------------------------------------- */
+
+
+
+
 /* - navbar ------------------------------------------------------------------ */
 
 .navbar {
@@ -101,15 +108,8 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-logo h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.footer-logo p {
-  font-size: 16px;
-  margin: 0;
+.footer-logo-img {
+  width: 15vw;
 }
 
 .footer-links {
