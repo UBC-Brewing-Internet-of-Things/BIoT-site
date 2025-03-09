@@ -11,10 +11,11 @@
 <body>
   <div class="navbar">
     <div class="hamburger-portion">
-      <button class="hamburger">&nbsp; &#9776;</button>
+      <button class="hamburger">&#9776;</button>
+      <a href="index.html"><img class="hamburger-logo" src="logo-with-text.png"/></a>
     </div>
-    <div class="navbar-links">
-      <img class="logo-img" src="logo.png"/>
+    <div class="navbar-links hide-thin">
+      <a href="index.html"><img class="logo-img" src="logo.png"/></a>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="team.html">Team</a>
@@ -116,7 +117,7 @@
       const navbarLinks = document.querySelector(".navbar-links");
 
       menuButton.addEventListener("click", function () {
-        navbarLinks.classList.toggle("show");
+        navbarLinks.classList.toggle("hide-thin");
       });
     });
   </script>
