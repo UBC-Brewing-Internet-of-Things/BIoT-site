@@ -10,6 +10,7 @@
 
 <body>
   <div class="navbar">
+    <button class="hamburger">&nbsp; &#9776;</button>
     <div class="navbar-links">
       <img class="logo-img" src="logo.png"/>
       <a href="index.html">Home</a>
@@ -30,42 +31,36 @@
     <div class="subteams content-container">
       <h2>Meet The Subteams</h2>
       <div class="subteam-container">
+        <div class="subteam-image-container">
+          <div class="subteam-image"></div>
+        </div>
         <div class="subteam-text">
           <h3>Instrumentation Team</h3>
           <p>The instrumentation team is responsible for creating equipment to sense brew data and automate tasks
-            associated
-            with the brewing process, and culminate it into a central web app. Common parameters to control are
-            temperature,
-            pH, dissolved oxygen, and specific gravity.</p>
-        </div>
-        <div class="subteam-image-container">
-          <div class="subteam-image"></div>
+            associated with the brewing process, and culminate it into a central web app. Common parameters to control are
+            temperature, pH, dissolved oxygen, and specific gravity.</p>
         </div>
       </div>
       <div class="subteam-container">
+        <div class="subteam-image-container">
+          <div class="subteam-image"></div>
+        </div>
         <div class="subteam-text">
           <h3>Brew Team</h3>
           <p>The brewing team is responsible for designing the brews, maintaining the equipment, and brewing the beer.
-            The team
-            uses the theory taught in CHBE courses to develop a bench scale brewery, develop methods to optimize the
-            brewing
-            process by analyzing products and intermediates during fermentation.</p>
-        </div>
-        <div class="subteam-image-container">
-          <div class="subteam-image"></div>
+            The team uses the theory taught in CHBE courses to develop a bench scale brewery, develop methods to optimize the
+            brewing process by analyzing products and intermediates during fermentation.</p>
         </div>
       </div>
       <div class="subteam-container">
-        <div class="subteam-text">
-          <h3>Laboratory Team</h3>
-          <p>The lab team is responsible for testing the final product for quality control as a simulation of real world
-            quality
-            control processes. The team creates data clusters to develop models for brewing process data and uses
-            laboratory
-            equipment to test properties beyond the instrumentation team’s abilities.</p>
-        </div>
         <div class="subteam-image-container">
           <div class="subteam-image"></div>
+        </div>
+        <div class="subteam-text">
+          <h3>Laboratory Team</h3>
+          <p>The lab team is responsible for testing the final product for quality control as a simulation of real-world
+            quality control processes. The team creates data clusters to develop models for brewing process data and uses
+            laboratory equipment to test properties beyond the instrumentation team’s abilities.</p>
         </div>
       </div>
     </div>
@@ -113,6 +108,16 @@
     <p class="footer-copy">@ 2024 UBC Brewing Internet of Things</p>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton = document.querySelector(".hamburger");
+      const navbarLinks = document.querySelector(".navbar-links");
+
+      menuButton.addEventListener("click", function () {
+        navbarLinks.classList.toggle("show");
+      });
+    });
+  </script>
 </body>
 
 </html>

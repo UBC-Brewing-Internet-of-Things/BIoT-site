@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="navbar">
+        <button class="hamburger">&nbsp; &#9776;</button>
         <div class="navbar-links">
             <img class="logo-img" src="logo.png"/>
             <a href="index.html">Home</a>
@@ -25,7 +26,6 @@
         </div>
         
         <div class="projects">
-
             <div class="filter-container">
               <button class="filter-btn active" data-category="all">All</button>
               <button class="filter-btn" data-category="lab">Lab Team</button>
@@ -33,33 +33,54 @@
               <button class="filter-btn" data-category="brew">Brew Team</button>
             </div>
 
-            <div class="project" data-category="lab">
+            <div class="project" data-category="lab brew">
+                <div class="image-placeholder"></div>
                 <div class="text">
-                    <h3>Glow-in-the-dark Beer <span class="project-date">Sept 2024</span></h3>
-                    <strong>Lab Team</strong>
-                    <p>Our project focuses on creating a glow-in-the-dark beer through the use of biotechnology. We are utilizing yeast, a fundamental organism in brewing, as a vector to express Green Fluorescent Protein (GFP), which naturally glows under specific wavelengths of light. GFP, originally found in jellyfish, will be expressed by the yeast during fermentation, producing a beer with a unique glowing effect.
+                    <h3 class="project-title">Glow-in-the-dark Beer</h3>
+                    <span class="project-date">Sept 2024</span>
+                    <strong class="project-team">Lab Team, Brew Team</strong>
+                    <p class="project-desc">Our project focuses on creating a glow-in-the-dark beer through the use of biotechnology. We are utilizing yeast, a fundamental organism in brewing, as a vector to express Green Fluorescent Protein (GFP), which naturally glows under specific wavelengths of light. GFP, originally found in jellyfish, will be expressed by the yeast during fermentation, producing a beer with a unique glowing effect.
 
                       The primary goal is to incorporate GFP into yeast under a constitutive promoter, ensuring continuous expression throughout fermentation, while maintaining the beer’s flavor and quality. This innovative project blends brewing with biotechnology, creating a visually captivating and scientifically-driven product.</p>
                 </div>
+            </div>
+            
+            <div class="project" data-category="lab">
                 <div class="image-placeholder"></div>
+                <div class="text">
+                    <h3 class="project-title">Bioregional Fermentation</h3>
+                    <span class="project-date">Sept 2024</span>
+                    <strong class="project-team">Lab Team</strong>
+                    <p class="project-desc">Our project aligns with the team's purpose by offering hands-on experience in fermentation science and microbiology, both critical fields in modern biotechnology and brewing. As part of the Internet of Things (BIoT), we aim to foster interdisciplinary innovation, allowing students from Chemical and Biological Engineering (CHBE) and related faculties to engage in practical applications that span multiple disciplines.
+
+                      This regional yeast strain fermentation project not only allows students to develop skills in microbial isolation, fermentation processes, and chromatographic analysis, but also demonstrates the importance of leveraging local microorganisms for brewing applications. By examining how the Okanagan Valley yeast strain differs from commercially available strains in terms of metabolite production, the project showcases how regional biodiversity can influence brewing outcomes.
+                      
+                      Additionally, this project supports our overarching goals of driving innovation, encouraging interdisciplinary collaboration, and giving students valuable hands-on experience that mirrors the real-world demands of the food and beverage industry, biotechnology, and microbiology.</p>
+                </div>
+            </div>
+            
+            <div class="project" data-category="brew">
+                <div class="image-placeholder"></div>
+                <div class="text">
+                    <h3 class="project-title">Van Brewer's Brewing Competition</h3>
+                    <span class="project-date">Jan 2025</span>
+                    <strong class="project-team">Brew Team</strong>
+                    <p class="project-desc">Our project focuses on creating a glow-in-the-dark beer through the use of biotechnology. We are utilizing yeast, a fundamental organism in brewing, as a vector to express Green Fluorescent Protein (GFP), which naturally glows under specific wavelengths of light. GFP, originally found in jellyfish, will be expressed by the yeast during fermentation, producing a beer with a unique glowing effect.
+
+                      The primary goal is to incorporate GFP into yeast under a constitutive promoter, ensuring continuous expression throughout fermentation, while maintaining the beer’s flavor and quality. This innovative project blends brewing with biotechnology, creating a visually captivating and scientifically-driven product.</p>
+                </div>
             </div>
             
             <div class="project" data-category="instrumentation">
-                <div class="text">
-                    <h3>Project <span class="project-date">May 2024</span></h3>
-                    <strong>Instrumentation Team</strong>
-                    <p>Project description for Instrumentation Team.</p>
-                </div>
                 <div class="image-placeholder"></div>
-            </div>
-            
-            <div class="project" data-category="lab instrumentation">
                 <div class="text">
-                    <h3>Project <span class="project-date">May 2024</span></h3>
-                    <strong>Lab Team | Instrumentation Team</strong>
-                    <p>Project description for both teams.</p>
+                    <h3 class="project-title">Instrumentation</h3>
+                    <span class="project-date">Jan 2025</span>
+                    <strong class="project-team">Instrumentation Team</strong>
+                    <p class="project-desc">Our project for this year focuses on designing a system that collects and stores data throughout the beer brewing process. Brewing is a complex process that involves monitoring various factors like temperature, pH, and specific gravity of alcohol, all of which impact the final product.
+
+                      To improve the brewing process, our team is developing a hardware-software solution that will monitor these variables in real-time and store the data in a centralized database. The database will allow the brew team to review the data, gain insights, and make more informed decisions to optimize the brewing process. Additionally, we are working on creating an intuitive user interface that will let users easily visualize the data and log notes about the process.</p>
                 </div>
-                <div class="image-placeholder"></div>
             </div>
         </div>
         
@@ -106,43 +127,13 @@
     </footer>
 
     <script>
-        const buttons = document.querySelectorAll(".filter-btn");
-        const projects = document.querySelectorAll(".project");
-        let activeFilters = new Set();
-
-        buttons.forEach(button => {
-            button.addEventListener("click", function() {
-                let category = this.getAttribute("data-category");
-                
-                if (category === "all") {
-                    activeFilters.clear();
-                    buttons.forEach(btn => btn.classList.remove("active"));
-                    this.classList.add("active");
-                } else {
-                    if (activeFilters.has(category)) {
-                        activeFilters.delete(category);
-                        this.classList.remove("active");
-                    } else {
-                        activeFilters.add(category);
-                        this.classList.add("active");
-                        document.querySelector(".filter-btn[data-category='all']").classList.remove("active");
-                    }
-                }
-                
-                if (activeFilters.size === 0) {
-                    document.querySelector(".filter-btn[data-category='all']").classList.add("active");
-                }
-                
-                projects.forEach(project => {
-                    let categories = project.getAttribute("data-category").split(" ");
-                    
-                    if (activeFilters.size === 0 || categories.some(cat => activeFilters.has(cat))) {
-                        project.style.display = "flex";
-                    } else {
-                        project.style.display = "none";
-                    }
-                });
-            });
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuButton = document.querySelector(".hamburger");
+          const navbarLinks = document.querySelector(".navbar-links");
+    
+          menuButton.addEventListener("click", function () {
+            navbarLinks.classList.toggle("show");
+          });
         });
     </script>
 </body>

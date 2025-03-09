@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="navbar">
+    <button class="hamburger">&nbsp; &#9776;</button>
     <div class="navbar-links">
       <img class="logo-img" src="logo.png"/>
       <a href="index.html">Home</a>
@@ -24,12 +25,11 @@
         <h1>Join Us In Shaping A Greener Future In Homebrewing!</h1>
         <p></p>
       </div>
-      <h1></h1>
         <div class="content-container">
             <h2>Sponsor The Team, Get Benefits</h2>
             <p>Sponsoring UBC Brewing Internet of Things means more than supporting an organization; it means investing in the next generation of engineers and innovators. Our team is dedicated to revolutionizing brewing through cutting-edge technologies and sustainable practices.
             </br></br>
-              BIoT focuses on bridging the gap between theory and practice by providing hands-on experience in brewing and programming. With projects centered around the Internet of Things, we aim to develop low-cost, innovative solutions for automated brewing systems. Students gain valuable skills in process controrl, data analysis, and teamwork, preparing them for successful careers in the industry.
+              BIoT focuses on bridging the gap between theory and practice by providing hands-on experience in brewing and programming. With projects centered around the Internet of Things, we aim to develop low-cost, innovative solutions for automated brewing systems. Students gain valuable skills in process control, data analysis, and teamwork, preparing them for successful careers in the industry.
             </br></br>
               By sponsoring BIoT, you not only contribute to the education and development of aspiring engineers but also support the advancement of sustainable brewing practices. Join us as we explore new frontiers in brewing technology and strive to make a positive impact on both our industry and our planet.</p>
         </div>
@@ -85,5 +85,16 @@
       </div>
       <p class="footer-copy">@ 2024 UBC Brewing Internet of Things</p>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".hamburger");
+        const navbarLinks = document.querySelector(".navbar-links");
+    
+        menuButton.addEventListener("click", function () {
+          navbarLinks.classList.toggle("show");
+        });
+      });
+    </script>
 </body>
 </html>

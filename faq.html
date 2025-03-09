@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recruitment - Brewing IoT</title>
+    <title>FAQ - Brewing IoT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="navbar">
+    <button class="hamburger">&nbsp; &#9776;</button>
     <div class="navbar-links">
       <img class="logo-img" src="logo.png"/>
       <a href="index.html">Home</a>
@@ -23,9 +24,6 @@
     <div class="header">
         <h1>Frequently Asked Questions</h1>
     </div>
-
-    <!--BIoT internet of things
-     monitoring, data collection, -->
     
     <div class="content-container faq-container">
         <div class="faq-item">
@@ -60,7 +58,6 @@
     </div>
 </div>
     
-  
     
     <footer class="footer">
       <div class="footer-container">
@@ -95,5 +92,16 @@
       </div>
       <p class="footer-copy">@ 2024 UBC Brewing Internet of Things</p>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".hamburger");
+        const navbarLinks = document.querySelector(".navbar-links");
+    
+        menuButton.addEventListener("click", function () {
+          navbarLinks.classList.toggle("show");
+        });
+      });
+    </script>
 </body>
 </html>
