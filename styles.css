@@ -309,7 +309,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: white;
-  padding: 15px;
+  padding: 30px;
   border-radius: 10px;
   margin-bottom: 15px;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
@@ -317,18 +317,22 @@ body {
 }
 .project .text {
   flex: 1;
-  padding: 10px;
+  padding: 20px;
+  width: 70%;
+  margin: 20px;
   text-align: left;
 }
 .project .image-placeholder {
-  width: 150px;
-  height: 100px;
+  width: 20%;
+  height: 10%;
+  min-height: 10vw;
   background: black;
   border-radius: 10px;
+  margin-right: 20px;
 }
 .project-date {
   float: right;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 /* filter ------------------------------------------------------------- */
@@ -462,11 +466,18 @@ body {
 }
 
 .team-info h3 {
-  font-size: 18px;
+  font-size: clip(14px, 18px, 24px);
   margin: 5px 0;
 }
 
 .team-info p {
-  font-size: 14px;
+  font-size: clip(10px, 14px, 18px);
   color: gray;
+}
+
+.logo-img {
+  height: 6vh;
+  margin: 0px 0.5vw;
+  padding: 0;
+  border-radius: 4px;
 }
