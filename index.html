@@ -11,8 +11,11 @@
 <body>
   <div class="navbar">
     <div class="hamburger-portion">
-      <button class="hamburger">&#9776;</button>
-      <a href="index.html"><img class="hamburger-logo" src="logo-with-text.png"/></a>
+      <div class="hamburger-left">
+        <button class="hamburger">&#9776;</button>
+        <a href="index.html"><img class="hamburger-logo" src="logo-with-text.png"/></a>
+      </div>
+      <button class="sponsor-button hide-wide" id="sponsor-hamburger" onclick="window.location.href='sponsor.html'">Sponsor Us</button>
     </div>
     <div class="navbar-links hide-thin">
       <a href="index.html"><img class="logo-img" src="logo.png"/></a>
@@ -21,7 +24,7 @@
       <a href="team.html">Team</a>
       <a href="recruitment.html">Recruitment</a>
       <a href="faq.html">FAQ</a>
-      <a href="sponsor.html" class="sponsor">Sponsor Us</a>
+      <button class="sponsor-button hide-thin" onclick="window.location.href='sponsor.html'">Sponsor Us</button>
     </div>
   </div>
 
