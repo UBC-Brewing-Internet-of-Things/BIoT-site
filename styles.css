@@ -29,6 +29,10 @@ body {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
 .content-container {
   background-color:#F0E2DE;
   width: 80%;
@@ -209,53 +213,63 @@ body {
 
 .header h1 {
   font-weight: 500;
-  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(30px, 5vw, 60px);
 }
 
 .header p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 36px);
 }
 
 .subteams {
   align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.subteams h2 {
+  font-size: clamp(30px, 5vw, 60px);
 }
 
 .subteam-container h3 {
   font-weight: 500;
-  font-size: 40px;
+  font-size: clamp(30px, 5vw, 60px);
 }
 
 .subteam-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 0% 2%;
-  align-items: center;
+  gap: 5vw;
 }
 
 .subteam-text {
-  padding: 1% 2%;
-  padding-right: 7.5%;
+  width: 60%;
+  margin: auto;
+  vertical-align: middle;
 }
 
 .subteam-text h3 {
-  text-align: center;
+  font-size: clamp(18px, 3vw, 36px);
+  margin: 0;
 }
 
 .subteam-text p {
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 30px);
 }
 
 .subteam-image-container {
   margin: auto;
+  width: 40%;
+  vertical-align: middle;
 }
 
 .subteam-image {
-  background-color: #000000;
+  vertical-align: middle;
   border-radius: 20px;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   align-items: center;
 }
 
@@ -355,43 +369,69 @@ body {
 
 .sponsorship-section h2 {
   font-weight: 500;
-  font-size: 48px;
+  font-size: clamp(28px, 4vw, 48px);
   text-align: center;
 }
 
 .sponsorship-section p {
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 24px);
 }
 
 .sponsorship-section {
-  width: 80%;
   margin-top: 5%;
   margin: 0%;
   padding: 2.5% 10%;
 }
 
+.sponsor-package-info {
+  display: flex;
+  gap: 2vw;
+}
+
+.sponsor-package-text {
+  width: 70%;
+  margin: auto;
+}
+
+.sponsor-package-text h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.sponsor-package-image {
+  width: 30%;
+  min-height: 20vh;
+  background-color: #000000;
+  margin: 2vw;
+  border-radius: 1vw;
+}
+
 /* FAQ -------------------------------------------------------------- */
+.faq-container {
+  width: 100%;
+}
+
 .faq-item {
   background-color: white;
   border-radius: 10px;
-  padding: 20px 40px;
-  margin: 20px;
+  padding: 2vw 4vw;
+  margin: 2vw;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
 }
 
 .faq-item h3 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: clamp(18px, 3vw, 30px);
 }
 
 .faq-item p {
-  font-size: 20px;
+  font-size: clamp(15px, 2vw, 20px);
 }
 
 /* recruitment -------------------------------------------------------------- */
 .recruitment-container p {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: clamp(24px, 3vw, 36px);
 }
 
 body {
@@ -548,8 +588,7 @@ body {
     align-items: center;
   }
   .subteam-image-container {
-    order: -1;
-    margin-bottom: 15px;
+    width: 70%;
   }
   .subteam-text {
     width: 100%;
@@ -654,8 +693,7 @@ body {
     align-items: center;
   }
   .subteam-image-container {
-    order: -1;
-    margin-bottom: 1.5vh;
+    width: 90%;
   }
   .subteam-text {
     width: 100%;
@@ -680,6 +718,16 @@ body {
   .footer-logo-img {
     width: 70%;
     margin-top: 5%;
+  }
+  .faq-container {
+    padding: 2vh 1vw;
+  }
+  .sponsor-package-info {
+    flex-direction: column-reverse;
+  }
+  .sponsor-package-image {
+    min-height: 16vh;
+    align-self: center;
   }
 }
 
