@@ -159,5 +159,45 @@
           });
         });
     </script>
+    <script>
+      const buttons = document.querySelectorAll(".filter-btn");
+      const projects = document.querySelectorAll(".project");
+      let activeFilters = new Set();
+
+      buttons.forEach(button => {
+          button.addEventListener("click", function() {
+              let category = this.getAttribute("data-category");
+              
+              if (category === "all") {
+                  activeFilters.clear();
+                  buttons.forEach(btn => btn.classList.remove("active"));
+                  this.classList.add("active");
+              } else {
+                  if (activeFilters.has(category)) {
+                      activeFilters.delete(category);
+                      this.classList.remove("active");
+                  } else {
+                      activeFilters.add(category);
+                      this.classList.add("active");
+                      document.querySelector(".filter-btn[data-category='all']").classList.remove("active");
+                  }
+              }
+              
+              if (activeFilters.size === 0) {
+                  document.querySelector(".filter-btn[data-category='all']").classList.add("active");
+              }
+              
+              projects.forEach(project => {
+                  let categories = project.getAttribute("data-category").split(" ");
+                  
+                  if (activeFilters.size === 0 || categories.some(cat => activeFilters.has(cat))) {
+                      project.style.display = "flex";
+                  } else {
+                      project.style.display = "none";
+                  }
+              });
+          });
+      });
+  </script>
 </body>
 </html>

@@ -5,7 +5,7 @@
   font-family: 'Rubik', sans-serif;
   max-width: 100%;
   box-sizing: border-box;
-  border: solid red;
+  /* border: solid red; */
 }
 
 body {
@@ -544,7 +544,7 @@ body {
     font-weight: bold;
   }
   .image-placeholder {
-    width: 100%;
+    width: 90%;
   }
   .project-desc {
     font-size: clamp(14px, 2.8vw, 18px);
@@ -640,7 +640,7 @@ body {
     flex-direction: column;
   }
   .image-placeholder {
-    width: 100%;
+    width: 90%;
   }
   .project-date {
     float: right;
