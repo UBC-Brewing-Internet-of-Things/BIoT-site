@@ -56,7 +56,7 @@ body {
 
 .footer {
   background-color: #CFC6C1;
-  padding: 40px 20px;
+  padding: 4vw 2vw;
   text-align: center;
   font-family: Arial, sans-serif;
   box-shadow: 0px 0px 10px 2px inset rgba(0,0,0,0.3);
@@ -77,12 +77,12 @@ body {
 
 .footer-links {
   display: flex;
-  gap: 50px;
+  gap: 5vw;
   text-align: left;
 }
 
 .footer-links h3 {
-  font-size: 18px;
+  font-size: clamp(12px, 2vw, 20px);
   font-weight: bold;
   margin-bottom: 16px;
   text-align: center;
@@ -90,9 +90,9 @@ body {
 
 .footer-links a {
   text-decoration: none;
-  color: black;
   display: block;
-  font-size: 16px;
+  color: black;
+  font-size: clamp(12px, 2vw, 20px);
   text-align: center;
   padding: 0px 20px;
   transition: all 0.2s ease-in-out;
@@ -111,7 +111,7 @@ body {
 }
 
 .footer-newsletter h3 {
-  font-size: 18px;
+  font-size: clamp(12px,1.8vw, 20px);
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -160,6 +160,7 @@ body {
 .join-us-container {
   align-items: center;
   justify-content: center;
+  margin: 1vh;
 }
 
 .join-us {
@@ -172,15 +173,15 @@ body {
 }
 
 .join-us h2 {
-  font-size: 48px;
+  font-size: clamp(36px, 4vw, 48px);
   font-weight: 500;
   margin: 1% 2%;
 }
 
 .join-button {
   background-color: black;
-  border-radius: 50px;
-  padding: 1% 2%;
+  border-radius: 2vw;
+  padding: 2vw 5vw;
   height: fit-content;
   display: inline-block;
   transition: all 0.2s;
@@ -293,12 +294,14 @@ body {
 }
 .project-headings {
   width: 100%;
+  margin-bottom: 2vh;
 }
 .project-title {
   font-size: clamp(28px, 5vw, 52px);
   margin: 0;
 }
 .image-placeholder {
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
   margin: 2vw;
   width: 30%;
   align-self: center;
@@ -505,10 +508,6 @@ body {
 /* - responsive ------------------------------------------------------------- */
 
 @media (max-width: 1024px) and (min-width: 768px) {
-
-  .navbar-links {
-    width: 100%;
-  }
   
   .hamburger {
     padding: 1vw;
@@ -529,10 +528,6 @@ body {
   .content-container {
     width: 100%;
   }
-  .project-inner {
-    display: flex;
-    flex-direction: column;
-  }
   .project-date {
     float: right;
     margin-right: 1.6vw;
@@ -542,9 +537,6 @@ body {
   .project-team {
     font-size: clamp(18px, 3.2vw, 24px);
     font-weight: bold;
-  }
-  .image-placeholder {
-    width: 90%;
   }
   .project-desc {
     font-size: clamp(14px, 2.8vw, 18px);
@@ -678,6 +670,16 @@ body {
   }
   .full-team-image {
     width: 100%;
+  }
+  .join-us h2 {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-logo-img {
+    width: 70%;
+    margin-top: 5%;
   }
 }
 
