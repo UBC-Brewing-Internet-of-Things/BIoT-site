@@ -3,12 +3,22 @@
 
 * {
   font-family: 'Rubik', sans-serif;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: solid red;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #FFF5F1;
+}
+
+#sponsor-hamburger {
+  float: right;
+  padding: 0vw 1.8vw;
+  border-radius: 1vw;
+  margin: 0.6vh;
 }
 
 .hamburger-portion {
@@ -251,53 +261,61 @@ body {
 /* - projects ---------------------------------------------------------- */
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
   background-color: #E6D6CC;
-  padding: 4vw;
-  margin: 4vw;
+  padding: 2vw;
+  margin: 2vw;
   border-radius: 1vw;
   box-shadow: 0px 0px 1vw 0.5vw inset rgba(0,0,0,0.1);
 }
 .project {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   background: white;
-  padding: 1vw 2vw;
+  padding: 4vw;
   border-radius: 1vw;
-  margin-bottom: 1vw;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
   transition: all 0.2s;
+}
+.project-inner {
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 1vw;
 }
 .project-text {
   flex: 1;
   padding: clamp(14px, 2vw, 18px);
-  width: 60%;
-  margin: 2vw;
+  width: 100%;
   text-align: left;
 }
 .project-title {
-  font-size: clamp(28px, 4.5vw, 44px);
+  font-size: clamp(28px, 5vw, 52px);
+  margin: 0;
 }
 .project .image-placeholder {
-  width: 20vw;
-  min-height: 20vw;
+  margin: 2vw;
+  width: 30%;
+  align-self: center;
+  max-height: max-content;
+  aspect-ratio: 1 / 1;
   background: black;
   border-radius: 10px;
-  margin-right: 20px;
 }
 .project-date {
   float: right;
-  margin-right: 1.6vw;
   font-style: italic;
   font-size: clamp(18px, 3.2vw, 24px);
 }
 .project-team {
-  margin-right: 1.6vw;
   font-size: clamp(18px, 3.2vw, 24px);
   font-weight: bold;
 }
 .project-desc {
   font-size: clamp(14px, 2.8vw, 18px);
+  padding: 1vh 1vw;
 }
 
 /* filter ------------------------------------------------------------- */
@@ -403,6 +421,17 @@ body {
   margin: 0px 1vw;
 }
 
+.sponsor-button {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  padding: 1vw;
+  margin-left: 1vw;
+  border-radius: 0.5vw;
+}
+
 .navbar-links a:hover {
   text-decoration: underline;
 }
@@ -489,40 +518,44 @@ body {
     border-radius: 4px;
     z-index: 100;
     height: fit-content;
+    align-self: center;
   }
   .content-container {
     width: 100%;
   }
+  
   .projects {
     background-color: #E6D6CC;
-    padding: 4vw;
     margin: 4vw;
     border-radius: 1vw;
     box-shadow: 0px 0px 1vw 0.5vw inset rgba(0,0,0,0.1);
   }
   .project {
+    all: unset;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background: white;
     border-radius: 1vw;
-    margin-bottom: 1vw;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
     transition: all 0.2s;
+    border: solid blue;
+    padding: 5vw;
   }
   .project-text {
-    flex: 1;
     text-align: left;
+    width: 100%;
+    border: solid red;
   }
   .project-title {
     font-size: clamp(28px, 4.5vw, 44px);
   }
-  .project .image-placeholder {
-    width: 100%;
+  .image-placeholder {
+    width: 50vw;
+    aspect-ratio: 1 / 1;
     background: black;
     border-radius: 10px;
-    margin-right: 20px;
+    align-self: center;
   }
   .project-date {
     float: right;
@@ -531,7 +564,6 @@ body {
     font-size: clamp(18px, 3.2vw, 24px);
   }
   .project-team {
-    margin-right: 1.6vw;
     font-size: clamp(18px, 3.2vw, 24px);
     font-weight: bold;
   }
@@ -592,7 +624,9 @@ body {
   }
 
   .hamburger-portion {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     top: 0vw;
     height: 6vh;
@@ -622,36 +656,39 @@ body {
     padding: 1vh 0;
     z-index: 100;
   }
-  /* .projects {
+  .projects {
     background-color: #E6D6CC;
+    margin: 4vw;
     border-radius: 1vw;
     box-shadow: 0px 0px 1vw 0.5vw inset rgba(0,0,0,0.1);
   }
   .project {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 1vw 1.5vw;
     border-radius: 1vw;
-    margin-bottom: 1vw;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
     transition: all 0.2s;
+    border: solid blue;
+    padding: 5vw;
   }
   .project-text {
-    flex: 1;
-    width: 100%;
     text-align: left;
+    width: 100%;
+    border: solid red;
   }
   .project-title {
     font-size: clamp(28px, 4.5vw, 44px);
   }
-  .image-placeholder {
+  .project.image-placeholder {
+    all: unset;
     width: 100%;
-    background: black;
+    aspect-ratio: 1 / 1;
+    background: white;
     border-radius: 10px;
-    margin-right: 20px;
+    align-self: center;
+    border: solid salmon;
   }
   .project-date {
     float: right;
@@ -660,14 +697,36 @@ body {
     font-size: clamp(18px, 3.2vw, 24px);
   }
   .project-team {
-    margin-right: 1.6vw;
     font-size: clamp(18px, 3.2vw, 24px);
     font-weight: bold;
   }
   .project-desc {
     font-size: clamp(14px, 2.8vw, 18px);
     width: 100%;
-  } */
+  }
+  .subteam-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .subteam-image-container {
+    order: -1;
+    margin-bottom: 1.5vh;
+  }
+  .subteam-text {
+    width: 100%;
+    padding: 0 5%;
+    text-align: center;
+  }
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .team-member {
+    width: 100%;
+  }
+  .full-team-image {
+    width: 100%;
+  }
 }
 
 

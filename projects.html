@@ -9,8 +9,11 @@
 <body>
   <div class="navbar">
     <div class="hamburger-portion">
-      <button class="hamburger">&#9776;</button>
-      <a href="index.html"><img class="hamburger-logo" src="logo-with-text.png"/></a>
+      <div class="hamburger-left">
+        <button class="hamburger">&#9776;</button>
+        <a href="index.html"><img class="hamburger-logo" src="logo-with-text.png"/></a>
+      </div>
+      <button class="sponsor-button hide-wide" id="sponsor-hamburger" onclick="window.location.href='sponsor.html'">Sponsor Us</button>
     </div>
     <div class="navbar-links hide-thin">
       <a href="index.html"><img class="logo-img" src="logo.png"/></a>
@@ -19,7 +22,7 @@
       <a href="team.html">Team</a>
       <a href="recruitment.html">Recruitment</a>
       <a href="faq.html">FAQ</a>
-      <a href="sponsor.html" class="sponsor">Sponsor Us</a>
+      <button class="sponsor-button hide-thin" onclick="window.location.href='sponsor.html'">Sponsor Us</button>
     </div>
   </div>
     
@@ -37,14 +40,18 @@
             </div>
 
             <div class="project" data-category="lab brew">
-                <div class="image-placeholder"></div>
-                <div class="project-text">
-                    <h3 class="project-title">Glow-in-the-dark Beer</h3>
-                    <span class="project-date">Sept 2024</span>
-                    <strong class="project-team">Lab Team, Brew Team</strong>
+                <div>
+                  <h3 class="project-title">Glow-in-the-dark Beer</h3>
+                  <span class="project-date">Sept 2024</span>
+                  <strong class="project-team">Lab Team, Brew Team</strong>
+                </div>
+                <div class="project-inner">
+                  <div class="image-placeholder"></div>
+                  <div class="project-text">
                     <p class="project-desc">Our project focuses on creating a glow-in-the-dark beer through the use of biotechnology. We are utilizing yeast, a fundamental organism in brewing, as a vector to express Green Fluorescent Protein (GFP), which naturally glows under specific wavelengths of light. GFP, originally found in jellyfish, will be expressed by the yeast during fermentation, producing a beer with a unique glowing effect.
                       <br/><br/>
                       The primary goal is to incorporate GFP into yeast under a constitutive promoter, ensuring continuous expression throughout fermentation, while maintaining the beer’s flavor and quality. This innovative project blends brewing with biotechnology, creating a visually captivating and scientifically-driven product.</p>
+                  </div>
                 </div>
             </div>
             
