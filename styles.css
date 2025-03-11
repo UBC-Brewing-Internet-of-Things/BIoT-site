@@ -218,7 +218,7 @@ body {
 
 .header p {
   font-weight: 400;
-  font-size: clamp(18px, 3vw, 36px);
+  font-size: clamp(18px, 3vw, 30px);
 }
 
 .subteams {
@@ -235,7 +235,7 @@ body {
 
 .subteam-container h3 {
   font-weight: 500;
-  font-size: clamp(30px, 5vw, 60px);
+  font-size: clamp(24px, 4vw, 48px);
 }
 
 .subteam-container {
@@ -256,7 +256,7 @@ body {
 }
 
 .subteam-text p {
-  font-size: clamp(16px, 2vw, 30px);
+  font-size: clamp(15px, 2vw, 20px);
 }
 
 .subteam-image-container {
@@ -430,8 +430,7 @@ body {
 
 /* recruitment -------------------------------------------------------------- */
 .recruitment-container p {
-  font-size: clamp(16px, 2vw, 24px);
-  line-height: clamp(24px, 3vw, 36px);
+  font-size: clamp(15px, 2vw, 20px);
 }
 
 body {
@@ -500,28 +499,28 @@ body {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.25fr));
+  gap: 2vw;
+  justify-content: center;
 }
 
 .full-team-image {
-  width: 800px;
+  width: 80vw;
   height: fit-content;
 }
 
 .team-member {
   background: white;
-  border-radius: 12px;
+  border-radius: 1.2vw;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 15px;
-  width: 180px;
+  padding: 1.5vw;
 }
 
 .team-member img {
   width: 100%;
   border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .team-info {
@@ -529,20 +528,19 @@ body {
 }
 
 .team-info h3 {
-  font-size: clamp(14px, 18px, 24px);
+  font-size: clamp(18px, 2.4vw, 24px);
   margin: 5px 0;
 }
 
 .team-info p {
-  font-size: clamp(10px, 14px, 18px);
+  font-size: clamp(15px, 2vw, 20px);
   color: gray;
 }
 
 .logo-img {
-  height: 6vh;
-  margin: 0px 0.5vw;
+  height: 8vh;
   padding: 0;
-  border-radius: 4px;
+  margin-bottom: -2vh;
 }
 
 /* - responsive ------------------------------------------------------------- */
@@ -595,14 +593,11 @@ body {
     padding: 0 5%;
     text-align: center;
   }
-  .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-  .team-member {
-    width: 100%;
-  }
   .full-team-image {
     width: 100%;
+  }
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
   }
 }
 
@@ -633,6 +628,10 @@ body {
     margin: 1vw;
   }
 
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.8fr));
+  }
+
   .hamburger-portion {
     width: 100%;
     display: flex;
@@ -640,6 +639,7 @@ body {
     flex-direction: row;
     top: 0vw;
     height: 6vh;
+    color: #000;
   }
   
   .hamburger-logo {
@@ -699,12 +699,6 @@ body {
     width: 100%;
     padding: 0 5%;
     text-align: center;
-  }
-  .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-  .team-member {
-    width: 100%;
   }
   .full-team-image {
     width: 100%;
