@@ -389,11 +389,12 @@ body {
 
 .sponsor-package-info {
   display: flex;
+  flex-direction: column-reverse;
   gap: 2vw;
 }
 
 .sponsor-package-text {
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 
@@ -403,11 +404,13 @@ body {
 }
 
 .sponsor-package-image {
-  width: 30%;
+  align-self: center;
+  width: 70%;
   min-height: 20vh;
   background-color: #000000;
   margin: 2vw;
   border-radius: 1vw;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
 }
 
 /* FAQ -------------------------------------------------------------- */
@@ -603,6 +606,11 @@ body {
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
   }
+  .sponsor-package-image {
+    width: 85%;
+    min-height: 16vh;
+    align-self: center;
+  }
 }
 
 
@@ -719,10 +727,8 @@ body {
   .faq-container {
     padding: 2vh 1vw;
   }
-  .sponsor-package-info {
-    flex-direction: column-reverse;
-  }
   .sponsor-package-image {
+    width: 100%;
     min-height: 16vh;
     align-self: center;
   }
