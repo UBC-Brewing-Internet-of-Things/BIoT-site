@@ -318,13 +318,12 @@ body {
   font-size: clamp(28px, 5vw, 52px);
   margin: 0;
 }
-.image-placeholder {
+.project-image {
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
   margin: 2vw;
   width: 30%;
   align-self: center;
   max-height: max-content;
-  aspect-ratio: 1 / 1;
   background: black;
   border-radius: 10px;
 }
@@ -681,7 +680,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .image-placeholder {
+  .project-image {
     width: 90%;
   }
   .project-date {
