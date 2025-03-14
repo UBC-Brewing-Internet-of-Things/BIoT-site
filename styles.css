@@ -486,6 +486,12 @@ body {
   padding: 1vw;
   margin-left: 1vw;
   border-radius: 0.5vw;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.sponsor-button:hover {
+  transform: scale(1.02);
 }
 
 .navbar-links a:hover {
