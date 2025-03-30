@@ -373,6 +373,7 @@ body {
 /* sponsorship --------------------------------------------------------- */
 
 .sponsorship-section h2 {
+  margin-top: -1vh;
   font-weight: 500;
   font-size: clamp(28px, 4vw, 48px);
   text-align: center;
