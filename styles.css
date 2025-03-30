@@ -450,7 +450,7 @@ body {
   text-align: center;
 }
 
-.platinum-sponsors {
+.tiered-sponsors {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2vw;
@@ -460,13 +460,13 @@ body {
   justify-items: center;
 }
 
-.platinum-sponsor-image-box {
+.tiered-sponsor-image-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.platinum-sponsor-image {
+.tiered-sponsor-image {
   width: 100%;
   max-width: 250px;
   height: auto;
@@ -475,12 +475,12 @@ body {
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
 }
 
-.platinum-sponsor-image:hover {
+.tiered-sponsor-image:hover {
   transform: scale(1.04);
   box-shadow: none;
 }
 
-.platinum-sponsor-image-box p {
+.tiered-sponsor-image-box p {
   margin-top: 1vw;
   font-size: clamp(14px, 2vw, 24px);
   text-align: center;
