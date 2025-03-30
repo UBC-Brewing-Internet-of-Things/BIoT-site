@@ -467,6 +467,13 @@ body {
   align-items: center;
 }
 
+.tiered-sponsor-image-link {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  transition: all 0.2s ease-in-out;
+}
+
 .tiered-sponsor-image {
   width: 100%;
   max-width: 250px;
