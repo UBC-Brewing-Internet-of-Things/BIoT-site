@@ -483,6 +483,11 @@ body {
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
 }
 
+.tiered-sponsor-image-link:hover {
+  transform: scale(1.04);
+  box-shadow: none;
+}
+
 .tiered-sponsor-image:hover {
   transform: scale(1.04);
   box-shadow: none;
