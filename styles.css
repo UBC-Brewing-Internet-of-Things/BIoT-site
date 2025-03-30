@@ -392,6 +392,11 @@ body {
   display: flex;
   flex-direction: column-reverse;
   gap: 2vw;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2vw 4vw;
+  margin: 2vw;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
 }
 
 .sponsor-package-text {
@@ -404,14 +409,81 @@ body {
   margin: 0;
 }
 
-.sponsor-package-image {
+.sponsor-package-image-link {
   align-self: center;
   width: 70%;
-  min-height: 20vh;
-  background-color: #000000;
   margin: 2vw;
   border-radius: 1vw;
+}
+
+.sponsor-package-image {
+  border-radius: 1vw;
+  vertical-align: auto;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.sponsor-package-image:hover {
+  transform: scale(1.04);
+  box-shadow: none;
+}
+
+.our-sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vw 0;
+}
+
+.our-sponsors h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.sponsor-tier-heading {
+  font-size: clamp(18px, 2.8vw, 32px);
+  font-weight: 500;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+
+.platinum-sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2vw;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 2vw;
+  justify-items: center;
+}
+
+.platinum-sponsor-image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.platinum-sponsor-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 0.5vw;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
+}
+
+.platinum-sponsor-image:hover {
+  transform: scale(1.04);
+  box-shadow: none;
+}
+
+.platinum-sponsor-image-box p {
+  margin-top: 1vw;
+  font-size: clamp(14px, 2vw, 24px);
+  text-align: center;
 }
 
 /* FAQ -------------------------------------------------------------- */
@@ -535,6 +607,12 @@ body {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.team-member img:hover {
+  transform: scale(1.04);
+  box-shadow: none;
 }
 
 .team-info {
@@ -614,7 +692,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
   }
   .sponsor-package-image {
-    width: 85%;
+    width: 100%;
     min-height: 16vh;
     align-self: center;
   }
@@ -734,7 +812,7 @@ body {
   .faq-container {
     padding: 2vh 1vw;
   }
-  .sponsor-package-image {
+  .sponsor-package-image-link {
     width: 100%;
     min-height: 16vh;
     align-self: center;
