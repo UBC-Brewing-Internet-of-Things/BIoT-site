@@ -475,8 +475,7 @@ body {
 }
 
 .tiered-sponsor-image {
-  width: 100%;
-  max-width: 250px;
+  width: 25vw;
   height: auto;
   border-radius: 0.5vw;
   transition: all 0.2s ease-in-out;
