@@ -64,7 +64,7 @@ body {
   background-color: #E8F4FA;
   padding: 3vw 2vw;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Merriweather, serif;
 }
 
 .footer-container {
@@ -108,7 +108,7 @@ body {
 }
 
 .footer-newsletter * {
-  font-family: 'Rubik';
+  font-family: Merriweather, serif;
 }
 
 .footer-newsletter {
@@ -520,7 +520,7 @@ body {
 }
 
 body {
-  font-family: 'EB Garamond', serif;
+  font-family: Merriweather, serif;
   margin: 0;
   padding: 0;
   background-color: white;
