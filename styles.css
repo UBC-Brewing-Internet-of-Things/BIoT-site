@@ -782,7 +782,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 2vw;
+    padding: 2vw 2vw;
   }
 
   .hamburger {
@@ -796,6 +796,7 @@ body {
     border: none;
     background: none;
     margin: 1vw;
+    color: #ffffff;
   }
 
   .team-grid {
@@ -827,10 +828,10 @@ body {
   .navbar-links {
     flex-direction: column;
     position: absolute;
-    top: 7vh;
+    top: 10vh;
     left: 0;
     width: 100%;
-    background-color: #F0E2DE;
+    background-color: #0d1e44;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     padding: 1vh 0;
     z-index: 100;
