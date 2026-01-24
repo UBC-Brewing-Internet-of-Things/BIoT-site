@@ -1,26 +1,31 @@
-import { useRouter } from 'next/router';
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
+import Logo from '../images/home_images/white_logo_text.png';
+import { useRouter } from 'next/navigation';
 
 function Navbar(){
   const router = useRouter();
 
     return(
         <>  
-        {/*<div className={styles.navbar}>
-            <button className={styles.hamburger} onClick={() => router.push('/') }>&#9776;</button>
-            <a href="/"><img className={styles.hamburgerLogo} src="/home_images/white_logo_text.png" alt="UBC BIoT Logo"/></a>
-            <button className={styles.sponsorButton + ' ' + styles.hideWide}id="sponsor-hamburger" onClick={() => router.push('/sponsor') }>Sponsor Us</button>
-          <div className={styles.navbarLinks + ' ' + styles.hideThin}>
-            <a href="/"><img className={styles.logoImg} src="/home_images/white_logo_text.png" alt="UBC BIoT Logo"/></a>
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/team">Team</a>
-            <a href="/recruitment">Recruitment</a> 
-            <a href="/faq">FAQ</a>
-            <button className={styles.sponsorButton + ' ' + styles.hideThin} onClick={() => router.push('/sponsor') }>Sponsor Us</button>
+        <div className={styles.navbar}>
+            <Link href="/"><Image 
+            src={Logo}
+            alt="UBC BIoT Logo"
+            width={130}
+            height={50}></Image>
+            </Link>
+            <div className={styles.navbarLinks}>
+            <Link href="/" className={styles.text}>Home</Link>
+            <Link href="/projects" className={styles.text}>Projects</Link>
+            <Link href="/team" className={styles.text}>Team</Link>
+            <Link href="/recruitment" className={styles.text}>Recruitment</Link> 
+            <Link href="/faq" className={styles.text}>FAQ</Link>
+            <button onClick={() => router.push("/sponsor")} className={styles.sponsorButton}>Sponsor Us</button>
           </div>
-        </div>*/}
-        
+        </div>        
         </>
 
     );
