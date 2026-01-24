@@ -1,23 +1,29 @@
-.footer {
-  padding: 3vw 2vw;
+.footer{
+  margin: 0;
+  background-color: #E8F4FA;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.footerContent {
+  padding-top: 20px;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
 }
 
-.footer > h3 {
+.heading {
   font-family: Merriweather, serif;
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(14px, 2.5vw, 22px);
   font-weight: bold;
-  margin-bottom: 16px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
-footer > span{
+.text{
+  font-weight: 500;
+  font-family: Merriweather, serif;
   text-decoration: none;
   display: block;
   color: black;
@@ -26,11 +32,19 @@ footer > span{
   padding: 0px 20px;
   transition: all 0.2s ease-in-out;
   gap: 5vw;
+  margin-bottom: 10px;
 
 }
 
-footer > span:hover {
+.text:hover {
   text-decoration: underline;
+}
+
+.copyright {
+  font-size: clamp(10px, 1.5vw, 16px);
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
 }
 
 /* Copied the Footer, but want to reduce the number of lines after understanding each part
@@ -40,11 +54,6 @@ footer > span:hover {
   width: 15vw;
 }
 
-.footer-copy {
-  margin-top: 20px;
-  font-size: 14px;
-  font-style: italic;
-}
 **/
 
 /*Deleted all newsletter related styles*/

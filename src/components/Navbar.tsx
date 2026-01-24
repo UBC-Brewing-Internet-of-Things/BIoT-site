@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
-import Logo from '../images/home_images/white_logo_text.png';
+import Logo from '../images/logo_images/white_logo_text.png';
 import { useRouter } from 'next/navigation';
 
 function Navbar(){
@@ -15,9 +15,10 @@ function Navbar(){
             src={Logo}
             alt="UBC BIoT Logo"
             width={130}
-            height={50}></Image>
+            height={50}
+            style={{ width: "80%", height: "auto", marginTop: "10px" }} />
             </Link>
-            <div className={styles.navbarLinks}>
+            <div>
             <Link href="/" className={styles.text}>Home</Link>
             <Link href="/projects" className={styles.text}>Projects</Link>
             <Link href="/team" className={styles.text}>Team</Link>
@@ -27,7 +28,6 @@ function Navbar(){
           </div>
         </div>        
         </>
-
     );
 
 
