@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import InterestButton from "../src/components/InterestButton";
+import '../src/styles/globals.css';
 
 
 export default function DashboardLayout({
