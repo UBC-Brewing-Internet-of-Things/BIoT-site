@@ -1,0 +1,31 @@
+.joinUs {
+  display: flex;
+  flex-direction: row;
+  padding: 2.5%;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.text {
+  font-size: clamp(36px, 4vw, 35px);
+  font-weight: 500;
+  margin: 1% 2%;
+}
+
+.joinButton {
+  background-color: #000033;
+  border-radius: 2vw;
+  padding: 1.5vw 1.5vw;
+  height: fit-content;
+  display: inline-block;
+  transition: all 0.2s;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.joinButton:hover {
+  transform: scale(1.02);
+}

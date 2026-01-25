@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from 'next/link';
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
+import InterestButton from "../src/components/InterestButton";
 
 
 export default function DashboardLayout({
@@ -23,6 +24,7 @@ export default function DashboardLayout({
       <body>
         <Navbar />
         {children}
+        <InterestButton />
         <Footer />
       </body>
     </html>
