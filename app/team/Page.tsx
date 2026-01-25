@@ -1,3 +1,9 @@
+import TeamCard from "@/src/components/TeamCard"
+
+
 export default function page() {
-  return <h1>Team page</h1>
+  return (  
+            <TeamCard />
+      
+  );
 }
