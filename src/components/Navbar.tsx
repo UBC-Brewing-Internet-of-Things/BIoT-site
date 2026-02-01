@@ -15,8 +15,8 @@ function Navbar(){
             src={Logo}
             alt="UBC BIoT Logo"
             width={130}
-            height={50}
-            style={{ width: "80%", height: "auto", marginTop: "10px" }} />
+            height={20}
+            style={{ width: "70%", height: "auto", marginTop: "8px" }} />
             </Link>
             <div>
             <Link href="/" className={styles.text}>Home</Link>

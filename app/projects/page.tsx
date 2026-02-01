@@ -1,3 +1,8 @@
+import ProjectCard from "@/src/components/ProjectCard";
+
 export default function page() {
-  return <h1>Projects page</h1>
+  return (
+    <ProjectCard />
+  );
+
 }

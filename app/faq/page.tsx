@@ -1,3 +1,6 @@
+import FaqCard from "@/src/components/FaqCard";
 export default function page() {
-  return <h1>FAQ page</h1>
+  return(
+    <FaqCard />
+  );
 }

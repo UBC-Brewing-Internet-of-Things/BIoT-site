@@ -1,0 +1,27 @@
+import styles from "@/src/styles/ProjectCard.module.css";
+
+function ProjectCard() {
+  return (
+    <>
+
+    
+    </>
+  );
+}
+export default ProjectCard;
+/*<div class="project" data-category="lab brew">
+                <div class="project-headings">
+                  <h3 class="project-title">Glow-in-the-dark Beer</h3>
+                  <span class="project-date">Sept 2024</span>
+                  <strong class="project-team">Lab Team, Brew Team</strong>
+                </div>
+                <div class="project-inner">
+                  <img class="project-image" src="project images/glow_in_the_darkbeer_project.jpg"/>
+                  <div class="project-text">
+                    <p class="project-desc">Our project focuses on creating a glow-in-the-dark beer through the use of biotechnology. We are utilizing yeast, a fundamental organism in brewing, as a vector to express Green Fluorescent Protein (GFP), which naturally glows under specific wavelengths of light. GFP, originally found in jellyfish, will be expressed by the yeast during fermentation, producing a beer with a unique glowing effect.
+                      <br/><br/>
+                      The primary goal is to incorporate GFP into yeast under a constitutive promoter, ensuring continuous expression throughout fermentation, while maintaining the beer’s flavor and quality. This innovative project blends brewing with biotechnology, creating a visually captivating and scientifically-driven product.</p>
+                  </div>
+                </div>
+            </div>
+            */
