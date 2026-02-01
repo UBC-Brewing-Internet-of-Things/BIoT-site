@@ -1,0 +1,51 @@
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 4vw;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+  margin: 10vh;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+}
+.text {
+  flex: 1;
+  width: 100%;
+  text-align: left;
+  padding: 0 20px;
+}
+.headings {
+  width: 100%;
+  margin-bottom: 2vh;
+  font-family: 'Merriweather', serif;
+}
+.title {
+  font-size: clamp(28px, 5vw, 52px);
+  margin: 0;
+}
+.image {
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+  margin: 0vw 2vw 0vw 0vw;
+  width: 30%;
+  align-self: center;
+  max-height: max-content;
+  background: black;
+  border-radius: 10px;
+}
+.date {
+  float: right;
+  font-style: italic;
+  font-size: clamp(18px, 3.2vw, 24px);
+  margin-top: 0;
+}
+.team {
+  font-size: clamp(18px, 3.2vw, 24px);
+  font-weight: bold;
+  margin-top: 0;
+}
