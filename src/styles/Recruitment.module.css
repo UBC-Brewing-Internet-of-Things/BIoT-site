@@ -1,0 +1,66 @@
+.container {
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container h1 {
+  font-weight: 600;
+  font-size: clamp(20px, 3vw, 40px);
+  font-family: 'Merriweather', serif;
+}
+
+.container h2 {
+  margin-top: -1vh;
+  font-weight: 500;
+  font-size: clamp(28px, 4vw, 48px);
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.container span{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(15px, 2vw, 20px);
+  color: #1a1a90;
+}
+
+
+.logosContainer {
+  max-width: 3rem;
+  max-height: 3rem;
+  align-self: center;
+}
+
+.logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+
+.icons{
+  display: flex;
+  gap: 10px;
+}
+.tableIcons{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+}
+
+.rectangle{
+  border: none;
+  height: 8px;
+  background-color: #414170;
+  margin-top: 40px;
+  width: 95%;
+  margin-bottom: 20px;
+}
