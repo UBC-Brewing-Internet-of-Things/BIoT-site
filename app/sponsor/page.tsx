@@ -6,7 +6,7 @@ import SponsorCard from '@/src/components/SponsorCard';
 
 export default function page() {
   return (
-    <div className={styles.page}>
+    <main className={styles.page}>
       <h1>Join Us In Shaping A Greener Future In Homebrewing!</h1>
       <h2>Sponsor The Team. Get Benefits.</h2>
       <p>Sponsoring UBC Biological Internet of Things means more than supporting an organization; it means investing in the next generation of engineers and innovators. Our team is dedicated to revolutionizing brewing through cutting-edge technologies and sustainable practices.
@@ -32,7 +32,7 @@ export default function page() {
       <SponsorCard />
       <SponsorCard />
     
-    </div>
+    </main>
   );
 }
 /*

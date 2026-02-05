@@ -1,0 +1,9 @@
+
+.header {
+    font-weight: 600;
+    font-size: clamp(30px, 4vw, 50px);
+    font-family: "Merriweather", serif;
+    margin: 100px 0;
+    text-align: center;
+
+}

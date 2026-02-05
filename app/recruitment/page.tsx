@@ -1,36 +1,59 @@
 import styles from '../../src/styles/Recruitment.module.css';
+import InstagramLogo from "@/src/images/logo_images/instagram_logo.png";
+import LinkedinLogo from "@/src/images/logo_images/linkedin_logo.png";
+import icon1 from '@/src/images/logo_images/sensor_icon.png';
+import icon2 from '@/src/images/logo_images/automation_icon.png';
+import icon3 from '@/src/images/logo_images/bioengineering_icon.png';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function page() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <h1>Applications For The 2025/26 Cycle Are Now Closed.</h1>
       <p><b>Please follow our socials for more updates</b></p>
       <div className={styles.logos}>
-        <a className={styles.recruitmentLogos}
-            href="https://www.instagram.com/ubcbiot/">
-            <img src="/logo_images/instagram_logo.png"
-            className={styles.recruitmentLogos} />
-        </a>
-        <a className={styles.recruitmentLogos}
-            href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">
-            <img src="/logo_images/linkedin_logo.png"
-            className={styles.recruitmentLogos} />
-        </a>
+        <Link href="https://www.instagram.com/ubcbiot/">
+            <Image 
+            src={InstagramLogo} 
+            alt="Instagram Logo" 
+            height={40}
+            width={40}/>
+        </Link>
+        <Link href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">
+            <Image 
+            src={LinkedinLogo} 
+            alt="LinkedIn Logo" 
+            height={40}
+            width={40} />
+        </Link>
       </div>
       <hr className={styles.rectangle} />
       <h2 style={{fontSize: 'xx-large'}}>Why Join Us?</h2>
       <p>BIoT is a student-led team dedicated to recreating the industrial brewing process on a home-brewing scale using:</p>
       <div className={styles.tableIcons}>
         <div className={styles.icons}>
-          <img src="/logo_images/sensor_icon.png" className={styles.recruitmentLogos}/>
+          <Image 
+          src={icon1} 
+          alt="Sensors Icon"
+          height={50}
+          width={50}/>
           <p><b>Sensors</b></p>
         </div>
         <div className={styles.icons}>
-          <img src="/logo_images/automation_icon.png" className={styles.recruitmentLogos}/>
+          <Image 
+          src={icon2} 
+          alt="Automation Icon"
+          height={50}
+          width={50}/>
           <p><b>Automation</b></p>
         </div>
         <div className={styles.icons}>
-          <img src="/logo_images/bioengineering_icon.png" className={styles.recruitmentLogos}/>
+          <Image 
+          src={icon3} 
+          alt="Bioengineering Icon"
+          height={50}
+          width={50}/>
           <p><b>Bioengineering</b></p>
         </div>
       </div>
@@ -47,7 +70,7 @@ export default function page() {
       </p>
 
 
-    </div>
+    </main>
   );
 }
 

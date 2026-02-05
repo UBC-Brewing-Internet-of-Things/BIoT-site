@@ -4,7 +4,7 @@ import HomepageImage from "@/src/images/home_images/beaker_home.jpg";
 
 export default function Page() {
   return (
-  <>
+  <main>
     <Image
       src={HomepageImage}
       alt="Homepage Image"
@@ -12,6 +12,6 @@ export default function Page() {
       height={600}
     />
     <SubteamHomepageCard />
-  </>
+  </main>
   );
 }
