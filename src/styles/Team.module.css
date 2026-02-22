@@ -1,0 +1,24 @@
+.header {
+    font-weight: 600;
+    font-size: clamp(30px, 4vw, 50px);
+    font-family: "Merriweather", serif;
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: clamp(20px, 4vw, 40px);
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
+
+
+.subteams {
+  display: flex;
+  flex-direction: row;
+  gap: 4vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}

@@ -2,18 +2,18 @@ import styles from '../styles/TeamCard.module.css';
 import Image from 'next/image';
 import Profile from '../images/headshots_2025/Edan_Steen.jpg';
 
-function TeamCard() {
+function TeamCard({ name, role, peopleImages }: { name: string, role: string, peopleImages: any }) {
     return (
         <div className={styles.teamMember}>
             <Image 
-                src={Profile}
-                alt="Captain" 
+                src={peopleImages}
+                alt={name} 
                 width={100}
                 height={200}
                 className={styles.teamImage} />
             <div className={styles.teamInfo}>
-                <h3 style={{ fontSize: 'clamp(18px, 2.4vw, 24px)' }}>Edan Steen</h3>
-                <p style={{ color: 'gray' }}>Co-Captain</p>
+                <h3 >{name}</h3>
+                <p style={{ color: 'gray' }}>{role}</p>
             </div>
         </div>
     );
