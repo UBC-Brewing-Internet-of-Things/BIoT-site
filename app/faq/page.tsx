@@ -1,12 +1,6 @@
 import FaqCard from "@/src/components/FaqCard";
 import styles from "@/src/styles/Faq.module.css";
-const qna = [
-  {question: "What does the application process look like?", answer: "In order to apply to the team, you’ll first need to fill out an online application where you’ll have a chance to explain your interest in brewing (or your chosen sub-team), as well as what you hope to gain from joining the team, and how your experiences have set you up for success. After submitting the application, you’ll be able to book a time for an in-person interview with our sub-team leads. Finally, you’ll hear from us about the outcome of your application, typically in late September, around 2-3 weeks after the start of the application period."},
-  {question:"When does recruitment open?", answer:"The main application window opens at the start of the academic year in September. Depending on the team’s capacity, we may also open a second window in January."},
-  {question:"Do I need to have prior experience to join the team?", answer:"No! While it can help to have some experience working with the tools your chosen sub-team uses, there is no experience requirement, and we regularly have first-year students join the team. The goal here is to help you develop the skills you’ll need for after university, and there is no expectation that you possess them prior to joining the team."},
-  {question:"Do I need to apply to each sub-team separately?", answer:"No! When you go to apply, you’ll fill out one unified application. At the end of the application, you’ll have a chance to rank each sub-team based on your preference and provide a short response explaining your ranking."},
-  {question:"Do I need to be in CHBE to join?", answer:"No! You do not need to be in any specific degree to join. Our team is mostly engineering students, but we also have members from computer science, biotechnology, and arts."}
-] ;
+import { qna } from "@/src/data/faqData";
 
 export default function page() {
   return(

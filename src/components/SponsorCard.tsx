@@ -1,16 +1,15 @@
-import styles from '../styles/Sponsor.module.css';
+import styles from '../styles/SponsorCard.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import UBCEngineeringLogo from '../images/sponsor images/ubc_engineering.png';
 
-function SponsorCard() {
+function SponsorCard({name, image, link}: {name: string, image: any, link: string}) {
     return (
         <div>
-            <div className={styles.container}>
-            <Link href="https://engineering.ubc.ca" target="_blank" rel="noopener noreferrer">
-              <Image className={styles.image} src={UBCEngineeringLogo} alt="UBC Engineering Logo" width={200} height={200} />
+          <div className={styles.container}>
+            <Link href={link} target="_blank" rel="noopener noreferrer">
+              <Image className={styles.image} src={image} alt={name + " Logo"} width={200}/>
             </Link>
-            <p>UBC Engineering</p>
+            <p>{name}</p>
           </div>
         </div>
     );

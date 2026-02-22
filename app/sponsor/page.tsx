@@ -1,8 +1,9 @@
 import styles from '../../src/styles/Sponsor.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import sponsorshipPackage from '../../src/images/sponsor images/BIoT_Sponsorship_Package_2025.png';
+import sponsorshipPackage from '../../src/images/sponsor_images/BIoT_Sponsorship_Package_2025.png';
 import SponsorCard from '@/src/components/SponsorCard';
+import {sponsors} from '@/src/data/sponsorsData';
 
 export default function page() {
   return (
@@ -25,13 +26,23 @@ export default function page() {
       </div>
       <h2>Our Sponsors</h2>
       <h3>Platinum Sponsors</h3>
-      <SponsorCard />
+      <div className={styles.tieredContainer}>
+        {sponsors.Platinum.map((sponsor, index) => (
+          <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
+        ))}
+      </div>      
       <h3 className={styles.sponsorTierHeading}>Silver Sponsors</h3>
-      <SponsorCard />
+      <div className={styles.tieredContainer}>
+        {sponsors.Silver.map((sponsor, index) => (
+          <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
+        ))}
+      </div>
       <h3 className={styles.sponsorTierHeading}>Supporters</h3>
-      <SponsorCard />
-      <SponsorCard />
-    
+      <div className={styles.tieredContainer}>
+        {sponsors.Supporters.map((sponsor, index) => (
+          <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
+        ))}
+      </div>
     </main>
   );
 }

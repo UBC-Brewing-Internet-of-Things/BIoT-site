@@ -1,22 +1,19 @@
 import Image from 'next/image';
 import styles from '../styles/SubteamHomepageCard.module.css';
-import InstrumentationImage from '../images/home_images/instrumentation.png';
 
-function SubteamHomepageCard() {
+function SubteamHomepageCard({image, description, title}: {image:any}) {
   return (
     <div className={styles.container}>
         <Image 
-          src={InstrumentationImage}
-          alt="Instrumentation Team"
+          src={image}
+          alt={title}
           width={400}
           height={270}
           className={styles.image}
         />
         <div className={styles.text}>
-            <h3>Instrumentation Team</h3>
-            <p>The instrumentation team is responsible for creating equipment to sense brew data and automate tasks
-            associated with the brewing process, and culminate it into a central web app. Common parameters to control are
-            temperature, pH, dissolved oxygen, and specific gravity.</p>
+            <h3>{title}</h3>
+            <p>{description}</p>
         </div>
 
 
