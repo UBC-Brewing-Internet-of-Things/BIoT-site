@@ -1,9 +1,12 @@
-.container {
-  width: 100%;
+.container h1 {
+  font-weight: 800;
+  font-size: clamp(20px, 3vw, 28px);
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .parallax {
-  background-image: url(/src/images/home_images/beaker_home.jpg);
   min-height: 700px;
 
   /* parallax scrolling effect */
@@ -18,7 +21,7 @@
 .home_title {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 20%;
   transform: translate(-50%, -50%); /* center horizontally & vertically */
   width: 60%;
   text-align: center;

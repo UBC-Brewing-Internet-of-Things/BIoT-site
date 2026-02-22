@@ -1,6 +1,6 @@
 import styles from "@/src/styles/ProjectCard.module.css";
 import Image from "next/image";
-import ProjectImage from "../images/project images/glow_in_the_darkbeer_project.jpg";
+import ProjectImage from "../images/project_images/glow_in_the_darkbeer_project.jpg";
 
 function ProjectCard() {
   return (
