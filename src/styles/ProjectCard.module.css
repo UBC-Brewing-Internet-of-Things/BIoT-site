@@ -4,21 +4,22 @@
   flex-direction: column;
   justify-content: space-between;
   background: white;
-  padding: 4vw;
+  padding: 3vw;
   border-radius: 1vw;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
   transition: all 0.2s;
-  margin: 10vh;
+  margin: 4vh 10vh;
 }
 .description {
   display: flex;
   flex-direction: row;
 }
 .text {
-  flex: 1;
+  font-size: clamp(10px, 5vw, 15px);
   width: 100%;
   text-align: left;
   padding: 0 20px;
+
 }
 .headings {
   width: 100%;
@@ -26,7 +27,7 @@
   font-family: 'Merriweather', serif;
 }
 .title {
-  font-size: clamp(28px, 5vw, 52px);
+  font-size: clamp(28px, 5vw, 40px);
   margin: 0;
 }
 .image {
@@ -41,11 +42,11 @@
 .date {
   float: right;
   font-style: italic;
-  font-size: clamp(18px, 3.2vw, 24px);
+  font-size: clamp(18px, 3.2vw, 22px);
   margin-top: 0;
 }
 .team {
-  font-size: clamp(18px, 3.2vw, 24px);
+  font-size: clamp(18px, 3.2vw, 22px);
   font-weight: bold;
   margin-top: 0;
 }

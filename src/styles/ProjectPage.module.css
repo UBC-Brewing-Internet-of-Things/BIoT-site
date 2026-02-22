@@ -1,0 +1,8 @@
+.header {
+    font-weight: 600;
+    font-size: clamp(30px, 4vw, 50px);
+     margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
