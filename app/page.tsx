@@ -6,7 +6,8 @@ import styles from "@/src/styles/Homepage.module.css";
 export default function Page() {
   return (
   <main className={styles.container}>
-    <div className={styles.parallax} style={{backgroundImage: `url(${HomepageImage})`}}>
+    <div className={styles.parallax} style={{backgroundImage: `url(${HomepageImage.src})`}}>
+      
       <div className={styles.home_title}>
         <h1>What If Homebrewers Could Automate Brews Like Large Companies?</h1>
         <p>Our team aims to design and implement low-cost data monitoring and develop innovative techniques to brew novel, high-quality beers through various projects.</p>

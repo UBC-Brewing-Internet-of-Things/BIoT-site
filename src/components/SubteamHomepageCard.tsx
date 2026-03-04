@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../styles/SubteamHomepageCard.module.css';
 
-function SubteamHomepageCard({image, description, title}: {image:any}) {
+function SubteamHomepageCard({image, description, title}: {image:any, description:string, title:string}) {
   return (
     <div className={styles.container}>
         <Image 
