@@ -34,5 +34,5 @@
 
 .home_title * {
   font-family: Merriweather, serif;
-  font-size: clamp(10px, 2vw, 18px);
+  font-size: clamp(5px, 2vw, 18px);
 }
