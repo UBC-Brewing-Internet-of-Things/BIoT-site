@@ -2,7 +2,7 @@ import TeamCard from "@/src/components/TeamCard";
 import { subteams } from "@/src/data/teamData";
 import styles from "@/src/styles/Team.module.css";
 
-export default function Page() {
+export default function page() {
   return (
     <main>
       <h1 className={styles.header}>Our Team</h1>
