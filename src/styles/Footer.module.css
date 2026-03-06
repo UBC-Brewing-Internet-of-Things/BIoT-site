@@ -47,8 +47,9 @@
   font-style: italic;
 }
 .textGroup{
-  display: 'flex';
-  gap: '3vw';
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
 }
 
 @media (max-width: 768px){
