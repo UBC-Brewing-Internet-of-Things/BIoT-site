@@ -1,9 +1,15 @@
 
 .header {
     font-weight: 600;
-    font-size: clamp(30px, 4vw, 50px);
+    font-size: clamp(28px, 4vw, 50px);
     font-family: "Merriweather", serif;
-    margin: 100px 0;
+    margin: 10% 0;
     text-align: center;
 
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-top: 30%;
+    }
 }
