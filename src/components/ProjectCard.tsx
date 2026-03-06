@@ -2,13 +2,13 @@ import styles from "@/src/styles/ProjectCard.module.css";
 import Image from "next/image";
 import ProjectImage from "../images/project_images/glow_in_the_darkbeer_project.jpg";
 
-function ProjectCard({title, description, date, team, image}: {title:string, description:string, date:string, team:string, image:any}) {
+function ProjectCard({title, description, date, team, image}: {title:string, description:string, date:string, team:string[], image:any}) {
   return (
         <div className={styles.project} data-category="lab brew">
             <div className={styles.headings}>
                 <h3 className={styles.title}>{title}</h3>
                 <p className={styles.date}>{date}</p>
-                <p className={styles.team}>{team}</p>
+                <p className={styles.team}>{team.join(", ")}</p>
             </div>
             <div className={styles.description}>
                 <Image

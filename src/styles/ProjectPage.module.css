@@ -6,3 +6,42 @@
     text-align: center;
     font-family: 'Merriweather', serif;
 }
+
+.projectDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  background-color: white;
+  padding: 2vw;
+  margin: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 1vw 0.5vw inset rgba(0,0,0,0.1);
+}
+
+.filter {
+    display: flex;
+  vertical-align: middle;
+  gap: 1vw;
+  font-family: 'Merriweather', serif;
+}
+
+.filter button{
+    all: unset;
+  background-color: white;
+  padding: 1vh 2vw;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+  transition: all 0.2s;
+  font-size: clamp(18px, 1vw, 20px);
+}
+
+.filter button.active {
+ background-color: rgba(0,0,0,0.2);
+}
+button.active {
+ background-color: rgba(0,0,0,0.2);
+}
+.filter button:hover {
+  background-color:rgba(0,0,0,0.4);
+  cursor: pointer;
+}
