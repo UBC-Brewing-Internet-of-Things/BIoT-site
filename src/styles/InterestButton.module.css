@@ -3,7 +3,6 @@
   flex-direction: row;
   padding: 2.5%;
   align-items: center;
-  margin: auto;
   justify-content: center;
 }
 
@@ -28,4 +27,16 @@
 
 .joinButton:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .text{
+    display: none;
+  }
+
+  .joinUs{
+    margin: 10px 0;
+  }
+
+
 }

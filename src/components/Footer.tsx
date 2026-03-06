@@ -17,7 +17,7 @@ function Footer(){
               height={120}
               style={{ width: "100%", height: "auto" }}/>
               </Link>
-              <div style={{display: 'flex', gap: '3vw'}}>
+              <div className={styles.textGroup}>
                   <div>
                       <h3 className={styles.heading}>Resources</h3>
                       <Link href="https://github.com/UBC-Brewing-Internet-of-Things" className={styles.text}>GitHub</Link>

@@ -46,14 +46,14 @@
   text-align: center;
   font-style: italic;
 }
-
-/* Copied the Footer, but want to reduce the number of lines after understanding each part
-
-
-.footer-logo-img {
-  width: 15vw;
+.textGroup{
+  display: 'flex';
+  gap: '3vw';
 }
 
-**/
+@media (max-width: 768px){
+  .footerContent {
+    flex-direction: column;
+  }
 
-/*Deleted all newsletter related styles*/
+}

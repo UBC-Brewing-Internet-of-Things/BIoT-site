@@ -29,7 +29,7 @@ export default function page() {
         </Link>
       </div>
       <hr className={styles.rectangle} />
-      <h2 style={{fontSize: 'xx-large'}}>Why Join Us?</h2>
+      <h2>Why Join Us?</h2>
       <p>BIoT is a student-led team dedicated to recreating the industrial brewing process on a home-brewing scale using:</p>
       <div className={styles.tableIcons}>
         <div className={styles.icons}>

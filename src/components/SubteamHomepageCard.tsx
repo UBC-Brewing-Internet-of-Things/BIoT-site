@@ -7,8 +7,6 @@ function SubteamHomepageCard({image, description, title}: {image:any, descriptio
         <Image 
           src={image}
           alt={title}
-          width={400}
-          height={270}
           className={styles.image}
         />
         <div className={styles.text}>
