@@ -10,10 +10,11 @@ export const subteams = {
         { name: "Zoe Shong", role: "Web Developer", peopleImages: peopleImages.Zoe_Shong },
         { name: "Sophie You", role: "Web Developer", peopleImages: peopleImages.Sophie_You },
         { name: "Chehan Arachchi", role: "Finance Coordinator", peopleImages: peopleImages.Chehan_Mallawa_Arachchi },
-        { name: "Ryan Parissay", role: "Marketing & Events Coordinator", peopleImages: peopleImages.Ryan_Parissay }
+        { name: "Ryan Parissay", role: "Marketing & Events Coordinator", peopleImages: peopleImages.Ryan_Parissay },
+        {name: "Clara Sitohang", role: "Marketing & Events Coordinator", peopleImages: peopleImages.Clara_Sitohang}
     ],
     Instrumentation: [
-        { name: "Edan Steen", role: "Instrumentation Team Lead", peopleImages: peopleImages.Edan_Steen },
+        { name: "Aavash Sharma", role: "Instrumentation Team Lead", peopleImages: peopleImages.Aavash_Sharma },
         { name: "Dan Elizur", role: "Instrumentation Team Member", peopleImages: peopleImages.Dan_Elizur },
         { name: "William White", role: "Instrumentation Team Member", peopleImages: peopleImages.William_White },
         { name: "Candice Lei", role: "Instrumentation Team Member", peopleImages: peopleImages.Candice_Lei },
@@ -21,6 +22,7 @@ export const subteams = {
         { name: "Duncan Funnell", role: "Instrumentation Team Member", peopleImages: peopleImages.Duncan_Funnell },
         { name: "Elizabeth Lim", role: "Instrumentation Team Member", peopleImages: peopleImages.Elizabeth_Lim },
         { name: "Yash Mali", role: "Instrumentation Team Member", peopleImages: peopleImages.placeholder },
+        {name: "Lauren Song", role: "Instrumentation Team Member", peopleImages: peopleImages.Lauren_Song} 
     ],
     Brew: [
         { name: "Eunseol Ko", role: "Brew Team Lead", peopleImages: peopleImages.Eunseol_Ko },
