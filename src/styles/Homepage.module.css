@@ -7,7 +7,7 @@
 }
 
 .parallax {
-  min-height: 700px;
+  min-height: 630px;
 
   /* parallax scrolling effect */
   background-attachment: fixed;
@@ -30,15 +30,27 @@
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
-.home_title h1 {
-  font-size: clamp(24px, 4vw, 50px);
+
+.home_title p {
+  font-size: clamp(10px, 3vw, 17px);
   font-family: Merriweather, serif;
+  margin: 0;
+}
+
+.home_logo{
+  width: 70%;
+  height: auto;
+  margin-bottom: -3%;
 }
 
 @media (max-width: 768px) {
   .home_title {
     width: 90%;
     padding: 0.5rem;
+  }
+
+  .home_logo{
+    width: 100%;
   }
 
   .parallax{
