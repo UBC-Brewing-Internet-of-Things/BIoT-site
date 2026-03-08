@@ -7,26 +7,43 @@ import { useRouter } from 'next/navigation';
 
 function Navbar(){
   const router = useRouter();
+  const menuOn = document.querySelectorAll(`.${styles.bar1}, .${styles.bar2}, .${styles.bar3}, .${styles.mobileMenu}`);
 
     return(
         <>  
         <div className={styles.navbar}>
-            <Link href="/"><Image 
+          <div className={styles.mobileNavbar} onClick={() => 
+          {menuOn.forEach(item => item.classList.toggle(styles.active));
+          }}>
+            <div className = {styles.bar1}></div>
+            <div className = {styles.bar2}></div>
+            <div className = {styles.bar3}></div>
+          </div>
+          <Link href="/"><Image 
             src={Logo}
             alt="UBC BIoT Logo"
-            width={130}
-            height={20}
-            style={{ width: "70%", height: "auto", marginTop: "8px" }} />
-            </Link>
-            <div>
+            className={styles.navbarLogo} />
+          </Link>
+
+          <div className = {styles.pcNavbar}>
             <Link href="/" className={styles.text}>Home</Link>
             <Link href="/projects" className={styles.text}>Projects</Link>
             <Link href="/team" className={styles.text}>Team</Link>
             <Link href="/recruitment" className={styles.text}>Recruitment</Link> 
             <Link href="/faq" className={styles.text}>FAQ</Link>
-            <button onClick={() => router.push("/sponsor")} className={styles.sponsorButton}>Sponsor Us</button>
+          
           </div>
-        </div>        
+          <button onClick={() => router.push("/sponsor")} className={styles.sponsorButton}>Sponsor Us</button>
+          
+        </div>
+        <div className={styles.mobileMenu}>
+          <Link href="/" className={styles.mobileLink}>Home</Link>
+          <Link href="/projects" className={styles.mobileLink}>Projects</Link>
+          <Link href="/team" className={styles.mobileLink}>Team</Link>
+          <Link href="/recruitment" className={styles.mobileLink}>Recruitment</Link> 
+          <Link href="/faq" className={styles.mobileLink}>FAQ</Link>
+        </div>
+
         </>
     );
 
@@ -34,22 +51,3 @@ function Navbar(){
 }
 
 export default Navbar;
-
-/*  <div class="navbar">
-    <div class="hamburger-portion">
-      <div class="hamburger-left">
-        <button class="hamburger">&#9776;</button>
-        <a href="index.html"><img class="hamburger-logo" src="/home_images/white_logo_text.png"/></a>
-      </div>
-      <button class="sponsor-button hide-wide" id="sponsor-hamburger" onclick="window.location.href='sponsor.html'">Sponsor Us</button>
-    </div>
-    <div class="navbar-links hide-thin">
-      <a href="index.html"><img class="logo-img" src="home_images/white_logo_text.png"/></a>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="team.html">Team</a>
-      <a href="recruitment.html">Recruitment</a>
-      <a href="faq.html">FAQ</a>
-      <button class="sponsor-button hide-thin" onclick="window.location.href='sponsor.html'">Sponsor Us</button>
-    </div>
-  </div> */

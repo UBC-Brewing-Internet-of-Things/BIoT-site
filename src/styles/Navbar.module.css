@@ -17,14 +17,20 @@
   font-size: clamp(12px, 2.2vh, 24px);
 }
 
+.navbarLogo{
+  width: 120px;
+  height: 50px;
+  margin-top: 8px;
+}
+
 .sponsorButton {
   all: unset;
   cursor: pointer;
   text-decoration: none;
   background-color: white;
   color: #000033;
-  padding: 0.7vw;
-  margin-left: 1vw;
+  padding: 9px;
+  margin-left: 20px;
   border-radius: 0.5vw;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
   transition: all 0.2s ease-in-out;
@@ -47,11 +53,65 @@
   text-decoration: underline;
 }
 
+.mobileMenu{
+  display: none;
+  z-index: 5;
+  position: fixed;
+  flex-direction: column;
+  top: 10%;
+}
 
-/* Responsive design for smaller screens 
-@media
+
+@media (max-width: 768px){
+  .mobileMenu.active{
+    display: flex;
+  }
 
 
+  .mobileLink{
+    text-decoration: none;
+    background-color: #000033;
+    color: white;
+    padding: 9px;
+    text-align: center;
+  }
 
+  .navbar{
+    justify-content: space-between;
+  }
+  .pcNavbar {
+    display: none;
+  }
 
-*/
+  .mobileNavbar {
+   display: inline-block;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .sponsorButton {
+    margin: 0 20px;
+    padding: 0 8px;
+  }
+
+  .bar1.active {
+    transform: translate(0, 7px) rotate(-45deg);
+  }
+
+  .bar2.active {
+    opacity: 0;
+  }
+
+  .bar3.active {
+    transform: translate(0, -7px) rotate(45deg);
+  }
+  
+}
