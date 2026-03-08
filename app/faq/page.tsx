@@ -10,6 +10,7 @@ export default function page() {
         <FaqCard key={index} 
         question={item.question} 
         answer={item.answer} />))}
+        {/*Iterates through the qna array from faqData*/}
     </main>
   );
 }

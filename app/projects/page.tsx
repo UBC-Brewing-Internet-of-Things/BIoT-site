@@ -4,11 +4,10 @@ import ProjectCard from "@/src/components/ProjectCard";
 import styles from "@/src/styles/ProjectPage.module.css";
 import { projects } from "@/src/data/projectData";
 
-
-
 export default function page() {
   const [selectedTeams, setSelectedTeams] = useState<string[]>([]);
   
+  //Adding team to selectedTeams if not already in it, otherwise removing it from selectedTeams
   const filter = (team:string) => {
     setSelectedTeams (prev => {
       if (prev.includes(team)) {
@@ -19,6 +18,7 @@ export default function page() {
     });
   };
 
+  //If no teams are selected, show all projects. Otherwise, filter projects to only show those that have a team in selectedTeams
   const filteredProjects =
     selectedTeams.length === 0
       ? projects
@@ -28,11 +28,10 @@ export default function page() {
           )
         );
 
-
+  //Resets selectedTeams to an empty array, which shows all projects
   const resetFilters = () => {
     setSelectedTeams([]);
   };
-
 
   return (
     <main>
