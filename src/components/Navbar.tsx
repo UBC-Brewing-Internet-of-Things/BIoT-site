@@ -4,20 +4,20 @@ import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
 import Logo from '../images/logo_images/white_logo_text.png';
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 function Navbar(){
   const router = useRouter();
-  const menuOn = document.querySelectorAll(`.${styles.bar1}, .${styles.bar2}, .${styles.bar3}, .${styles.mobileMenu}`);
+  const [menuOpen, setMenuOpen] = useState(false);
+
 
     return(
         <>  
         <div className={styles.navbar}>
-          <div className={styles.mobileNavbar} onClick={() => 
-          {menuOn.forEach(item => item.classList.toggle(styles.active));
-          }}>
-            <div className = {styles.bar1}></div>
-            <div className = {styles.bar2}></div>
-            <div className = {styles.bar3}></div>
+          <div className={styles.mobileNavbar} onClick={() => setMenuOpen(!menuOpen)}>
+            <div className = {`${styles.bar1} ${menuOpen ? styles.active : ''}`}></div>
+            <div className = {`${styles.bar2} ${menuOpen ? styles.active : ''}`}></div>
+            <div className = {`${styles.bar3} ${menuOpen ? styles.active : ''}`}></div>
           </div>
           <Link href="/"><Image 
             src={Logo}
@@ -36,7 +36,7 @@ function Navbar(){
           <button onClick={() => router.push("/sponsor")} className={styles.sponsorButton}>Sponsor Us</button>
           
         </div>
-        <div className={styles.mobileMenu}>
+        <div className={`${styles.mobileMenu} ${menuOpen ? styles.active : ''}`}>
           <Link href="/" className={styles.mobileLink}>Home</Link>
           <Link href="/projects" className={styles.mobileLink}>Projects</Link>
           <Link href="/team" className={styles.mobileLink}>Team</Link>
