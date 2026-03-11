@@ -1,0 +1,30 @@
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches: ["newsite"]   # deploy on push to main
+  workflow_dispatch:     # optional: manual trigger
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout repo
+      - uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Install dependencies
+      - run: npm ci
+
+      # 4. Build and export static site
+      - run: npm run deploy
+
+      # 5. Deploy to GitHub Pages
+      - uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
