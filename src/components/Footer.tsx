@@ -13,9 +13,7 @@ function Footer(){
               <Image
               src={Logo}
               alt="UBC BIoT Logo"
-              width={300}
-              height={120}
-              style={{ width: "100%", height: "auto" }}/>
+              className = {styles.logo}/>
               </Link>
               <div className={styles.textGroup}>
                   <div>

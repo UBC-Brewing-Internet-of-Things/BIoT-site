@@ -1,6 +1,6 @@
 import styles from '../styles/TeamCard.module.css';
 import Image from 'next/image';
-import Profile from '../images/headshots_2025/Edan_Steen.jpg';
+
 
 function TeamCard({ name, role, peopleImages }: { name: string, role: string, peopleImages: any }) {
     return (
