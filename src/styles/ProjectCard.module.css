@@ -15,7 +15,7 @@
   flex-direction: row;
 }
 .text {
-  font-size: clamp(10px, 5vw, 15px);
+  font-size: clamp(10px, 5vw, 20px);
   width: 100%;
   text-align: left;
   padding: 0 20px;
