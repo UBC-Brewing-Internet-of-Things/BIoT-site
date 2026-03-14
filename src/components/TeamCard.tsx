@@ -8,9 +8,7 @@ function TeamCard({ name, role, peopleImages }: { name: string, role: string, pe
             <Image 
                 src={peopleImages}
                 alt={name} 
-                width={100}
-                height={200}
-                className={styles.teamImage} />
+                className={styles.teamImage} unoptimized/>
             <div className={styles.teamInfo}>
                 <h3 >{name}</h3>
                 <p style={{ color: 'gray' }}>{role}</p>
