@@ -19,16 +19,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - uses: pnpm/action-setup@v4
-        name: Setup pnpm
+        name: Install pnpm
         with:
           version: 10
           run_install: false
 
-      - name: Setup Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -37,41 +37,22 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      # Optional: show node and pnpm versions for debug
-      - name: Check versions
-        run: |
-          node -v
-          pnpm -v
-
-      - name: Setup GitHub Pages
+      - name: Setup Pages
         id: setup_pages
         uses: actions/configure-pages@v5
 
-      # Build the site
-      - name: Build Next.js site
-        run: pnpm run build
+
+      - name: Clean out/
+        run: rm -rf out/
+
+
+      - name: Build and export Next.js
+        run: |
+          pnpm run build
+          pnpm run export
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
 
-      # DEBUG: list all files in out/ to confirm team.html exists
-      - name: List out/ contents
-        run: |
-          echo "Listing files in out/:"
-          ls -R ./out
 
-      # Upload the full out/ directory to Pages artifact
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: List out folder
+        run: ls -R out
