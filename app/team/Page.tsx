@@ -17,7 +17,50 @@ export default function page() {
           />
         ))}
       </div>
-      
+      <h2 className={styles.subtitle}>Admin</h2>
+      <div className={styles.subteams}>
+        {subteams.Admin.map((item, index) => (
+          <TeamCard
+            key={index}
+            name={item.name}
+            role={item.role}
+            peopleImages={item.peopleImages}
+          />
+        ))}
+      </div>
+      <h2 className={styles.subtitle}>Instrumentation Team</h2>
+      <div className={styles.subteams}>
+        {subteams.Instrumentation.map((item, index) => (
+          <TeamCard
+            key={index}
+            name={item.name}
+            role={item.role}
+            peopleImages={item.peopleImages}
+          />
+        ))}
+      </div>
+      <h2 className={styles.subtitle}>Brew Team</h2>
+      <div className={styles.subteams}>
+        {subteams.Brew.map((item, index) => (
+          <TeamCard
+            key={index}
+            name={item.name}
+            role={item.role}
+            peopleImages={item.peopleImages}
+          />
+        ))}
+      </div>
+      <h2 className={styles.subtitle}>Lab Team</h2>
+      <div className={styles.subteams} style={{ marginBottom: 0 }}>
+        {subteams.Lab.map((item, index) => (
+          <TeamCard
+            key={index}
+            name={item.name}
+            role={item.role}
+            peopleImages={item.peopleImages}
+          />
+        ))}
+      </div>
     </main>
   );
 }
