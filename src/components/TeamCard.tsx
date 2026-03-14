@@ -21,11 +21,3 @@ function TeamCard({ name, role, peopleImages }: { name: string, role: string, pe
 
 export default TeamCard;
 
-/*
-<div class="team-member">
-        <img src="headshots_2025/Edan_Steen.jpg" alt="Captain">
-        <div class="team-info">
-          <h3>Edan Steen</h3>
-          <p>Co-Captain</p>
-        </div>
- */
