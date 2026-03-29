@@ -12,46 +12,62 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
           version: 10
-          run_install: false
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "pnpm"
+          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Setup Pages
+      - name: Check versions
+        run: |
+          node -v
+          pnpm -v
+
+      - name: Setup GitHub Pages
         id: setup_pages
         uses: actions/configure-pages@v5
 
-
-      - name: Clean out/
-        run: rm -rf out/
-
-
-      - name: Build and export Next.js
-        run: |
-          pnpm run build
+      - name: Build Next.js site
+        run: pnpm run build
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
 
+      - name: List out/ contents
+        run: ls -R ./out
 
-      - name: List out folder
-        run: ls -R out
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
