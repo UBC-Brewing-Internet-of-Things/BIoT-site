@@ -28,7 +28,7 @@ function Navbar(){
           <div className = {styles.pcNavbar}>
             <Link href="/" className={styles.text}>Home</Link>
             <Link href="/projects" className={styles.text}>Projects</Link>
-            <Link href="/test" className={styles.text}>Team</Link>
+            <Link href="/team" className={styles.text}>Team</Link>
             <Link href="/recruitment" className={styles.text}>Recruitment</Link> 
             <Link href="/faq" className={styles.text}>FAQ</Link>
           
@@ -39,7 +39,7 @@ function Navbar(){
         <div className={`${styles.mobileMenu} ${menuOpen ? styles.active : ''}`}>
           <Link href="/" className={styles.mobileLink}>Home</Link>
           <Link href="/projects" className={styles.mobileLink}>Projects</Link>
-          <Link href="/test" className={styles.mobileLink}>Team</Link>
+          <Link href="/team" className={styles.mobileLink}>Team</Link>
           <Link href="/recruitment" className={styles.mobileLink}>Recruitment</Link> 
           <Link href="/faq" className={styles.mobileLink}>FAQ</Link>
         </div>
