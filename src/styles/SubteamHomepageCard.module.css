@@ -11,7 +11,7 @@
   width: 100%;
   vertical-align: middle;
   align-content: center;
-  font-size: clamp(10px, 3vw, 20px);
+  font-size: clamp(10px, 3vw, 18px);
 }
 
 .text h3 {
