@@ -32,7 +32,7 @@
   border-radius: 1vw;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
   transition: all 0.2s;
-  font-size: clamp(12px, 1vw, 20px);
+  font-size: clamp(15px, 1vw, 20px);
 }
 
 .filter button.active {
