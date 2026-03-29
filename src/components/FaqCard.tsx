@@ -1,12 +1,20 @@
+'use client'
+import { useState } from 'react';
 import styles from '../styles/FaqCard.module.css';
 
 
 function FaqCard ({question, answer}: {question: string, answer: string}) {
-    return (
+    const [dropdownQuestion, setDropdownQuestion] = useState(false);
+
+    return(
         <div className={styles.item}>
-            <h3>{question}</h3>
-            <p>{answer}</p>
+            <div className = {styles.question}>
+                <h3 onClick={() => setDropdownQuestion(!dropdownQuestion)}>{question}</h3>
+                <div onClick={() => setDropdownQuestion(!dropdownQuestion)} className = {`${styles.triangle} ${dropdownQuestion ? styles.active : ''}`}></div>
+            </div>
+            <p className = {`${styles.answer} ${dropdownQuestion ? styles.active : ''}`}>{answer}</p>
         </div>
+        
 
     );
 
@@ -15,8 +23,3 @@ function FaqCard ({question, answer}: {question: string, answer: string}) {
 }
 
 export default FaqCard;
-/* <div class="content-container faq-container">
-        <div class="faq-item">
-          <h3>What does the application process look like?</h3>
-          <p>In order to apply to the team, you’ll first need to fill out an online application where you’ll have a chance to explain your interest in brewing (or your chosen sub-team), as well as what you hope to gain from joining the team, and how your experiences have set you up for success. After submitting the application, you’ll be able to book a time for an in-person interview with our sub-team leads. Finally, you’ll hear from us about the outcome of your application, typically in late September, around 2-3 weeks after the start of the application period.</p>
-        </div> */
