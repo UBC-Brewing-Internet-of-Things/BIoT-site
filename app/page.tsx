@@ -1,5 +1,5 @@
 import SubteamHomepageCard from "@/src/components/SubteamHomepageCard";
-import HomepageImage from "@/src/images/home_images/beaker_home.jpg";
+import HomepageImage from "@/src/images/home_images/home1.jpg";
 import { subteamsDescription } from "@/src/data/homePageData";
 import styles from "@/src/styles/Homepage.module.css";
 import Logo from "@/src/images/logo_images/white_logo_text.png";
@@ -13,7 +13,7 @@ export default function Page() {
       <div className={styles.home_title}>
         <Image
         src={Logo}
-        alt="UBC BIoT Logo"
+        alt="UBC BIoT"
         className={styles.home_logo}
         />
         <p>Known as “UBC’s beer-brewing design team”, Biological Internet of Things (BIoT) has expanded to include a variety of projects in process control, R&D, and automation, including building a miniature chemical plant for the ChemE Cube competition, IoT process automation devices, and experimental research projects in food technology like making glow-in-the-dark beer.</p>

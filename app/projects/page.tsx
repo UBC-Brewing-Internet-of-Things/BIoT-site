@@ -37,12 +37,14 @@ export default function page() {
     <main>
       <h1 className={styles.header}>Check Out Our Projects</h1>
       <div className={styles.projectDisplay}>
+        {/* Filter buttons */}
         <div className={styles.filter}>
               <button className={selectedTeams.length === 0 ? styles.active : ""} onClick={resetFilters} >All</button>
               <button className={selectedTeams.includes("Lab Team") ? styles.active : ""} onClick={() => filter("Lab Team")}>Lab Team</button>
               <button className={selectedTeams.includes("Instrumentation Team") ? styles.active : ""} onClick={() => filter("Instrumentation Team")}>Instrumentation Team</button>
               <button className={selectedTeams.includes("Brew Team") ? styles.active : ""} onClick={() => filter("Brew Team")}>Brew Team</button>
         </div>
+        
         {filteredProjects.map((item,index)=> (
           <ProjectCard key={index} title={item.title} description={item.description} date={item.date} team={item.team} image={item.image}/>
         ))}
