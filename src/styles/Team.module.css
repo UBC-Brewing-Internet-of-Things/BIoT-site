@@ -2,13 +2,16 @@
     font-weight: 600;
     font-size: clamp(30px, 4vw, 50px);
     font-family: "Merriweather", serif;
-    margin: 100px 0 0 0;
+    
     text-align: center;
+}
+.container{
+    margin: 100px 0 0 0;
 }
 
 .subtitle {
-    font-weight: 600;
-    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 400;
+    font-size: clamp(20px, 4vw, 30px);
     font-family: "Merriweather", serif;
     text-align: center;
 }
@@ -21,4 +24,13 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 80px;
+}
+
+.rectangle{
+  border: none;
+  height: 8px;
+  background-color: #414170;
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 20px;
 }

@@ -2,6 +2,7 @@ import Aavash_Sharma from './Aavash_Sharma.jpg';
 import Amanda_Morales from './Amanda_Morales.jpg';
 import Andy_Setiawan from './Andy_Setiawan.jpg';
 import Artur_Noel from './Artur_Noel.jpg';
+import Ava_Lee_Gock from './Ava_Lee_Gock.jpg';
 import Bhavye_Elwhadi from './Bhavye_Elwhadi.jpg';
 import Candice_Lei from './Candice_Lei.jpg';
 import Chehan_Mallawa_Arachchi from './Chehan_Mallawa_Arachchi.jpg';
@@ -29,10 +30,13 @@ import Nathan_Zhao from './Nathan_Zhao.jpg';
 import placeholder from './placeholder.png';
 import Ryan_Parissay from './Ryan_Parissay.png';
 import Shuhan_Wang from './Shuhan_Wang.jpg';
+import Sierra_Toderel from './Sierra_Toderel.jpg';
+import Sophia_Cross from './Sophia_Cross.jpg';
 import Sophie_You from './Sophie_You.jpg';
+import Stephanie_Segin from './Stephanie_Segin.jpg';
 import William_White from './William_White.jpg';
 import Zoe_Shong from './Zoe_Shong.jpg';
 
 export const peopleImages ={
-    Aavash_Sharma, Amanda_Morales, Andy_Setiawan, Artur_Noel, Bhavye_Elwhadi, Candice_Lei, Chehan_Mallawa_Arachchi,Chester_Carey, Clara_Sitohang, Dan_Elizur, Darren_Hartono, Dominic_Rousseau, Duncan_Funnell, Edan_Steen, Elizabeth_Lim, Eunseol_Ko, Genesis_Saturos, Ignacio_Barros, Ilenna_Wen, Jay_Huang, Jeffery_To, Julia_Cabsaba, Lauren_Song, Luke_Kojima, Maximillian_Wu, Melissa_Xie, Michelle_Peng, Nathan_Zhao, placeholder, Ryan_Parissay, Shuhan_Wang, Sophie_You, William_White, Zoe_Shong
+    Aavash_Sharma, Amanda_Morales, Andy_Setiawan, Artur_Noel,Ava_Lee_Gock, Bhavye_Elwhadi, Candice_Lei, Chehan_Mallawa_Arachchi,Chester_Carey, Clara_Sitohang, Dan_Elizur, Darren_Hartono, Dominic_Rousseau, Duncan_Funnell, Edan_Steen, Elizabeth_Lim, Eunseol_Ko, Genesis_Saturos, Ignacio_Barros, Ilenna_Wen, Jay_Huang, Jeffery_To, Julia_Cabsaba, Lauren_Song, Luke_Kojima, Maximillian_Wu, Melissa_Xie, Michelle_Peng, Nathan_Zhao, placeholder, Ryan_Parissay, Sierra_Toderel, Shuhan_Wang, Sophia_Cross, Sophie_You, Stephanie_Segin, William_White, Zoe_Shong
 };

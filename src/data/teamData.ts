@@ -45,6 +45,32 @@ export const subteams = {
         { name: "Nathan Zhao", role: "Lab Team Member", peopleImages: peopleImages.Nathan_Zhao },
         { name: "Amanda Morales", role: "Lab Team Member", peopleImages: peopleImages.Amanda_Morales },
         { name: "Jeffery To", role: "Lab Team Member", peopleImages: peopleImages.Jeffery_To },
+  ],
+  Cheme: [
+        { name: "Shuhan Wang", role: "ChemE Cube Team Lead", peopleImages: peopleImages.Shuhan_Wang},
+        { name: "Jeffrey To", role: "ChemE Cube Member", peopleImages: peopleImages.Jeffery_To},
+        { name: "Michelle Peng", role: "ChemE Cube Member", peopleImages: peopleImages.Michelle_Peng},
+        { name: "Ilenna Wen", role: "ChemE Cube Member", peopleImages: peopleImages.Ilenna_Wen},
+        { name: "Duncan Funnell", role: "ChemE Cube Member", peopleImages: peopleImages.Duncan_Funnell},
+        { name: "Amanda Morales", role: "ChemE Cube Member", peopleImages: peopleImages.Amanda_Morales},
+        { name: "Ava Lee-Gock", role: "ChemE Cube Member", peopleImages: peopleImages.Ava_Lee_Gock},
+        { name: "Carolyn Yin", role:"ChemE Cube Member", peopleImages: peopleImages.placeholder},
+        { name: "Elizabeth Lim", role: "ChemE Cube Member", peopleImages: peopleImages.Elizabeth_Lim},
+        { name: "Jay Huang", role: "ChemE Cube Member", peopleImages: peopleImages.Jay_Huang},
+        { name: "Julia Cabsaba", role: "ChemE Cube Member", peopleImages: peopleImages.Julia_Cabsaba},
+        { name: "Sierra Toderel", role: "ChemE Cube Member", peopleImages: peopleImages.Sierra_Toderel},
+        { name: "Sophia Cross", role: "ChemE Cube Member", peopleImages: peopleImages.Sophia_Cross},
+        { name: "Stephanie Segin", role: "ChemE Cube Member", peopleImages: peopleImages.Stephanie_Segin},
+        { name: "Melissa Xie", role: "ChemE Cube Member", peopleImages: peopleImages.Melissa_Xie}
+        
+
+
+
+
+
+
+
+
   ]
 
 
