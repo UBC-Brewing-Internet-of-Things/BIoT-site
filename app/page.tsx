@@ -30,11 +30,11 @@ export default function Page() {
           <CurrentProjectCard
           title="Biofluorescent Beer"
           description="Use of yeast as a vector to express Green Fluorescent Protein (GFP)"
-          image={Biofluorescent_Beer}/>
+          image={Biofluorescent_Beer} link = "/biofluorescent-beer"/> 
           <CurrentProjectCard
           title="ChemE Cube"
           description=" 1 cubic foot plant that solves direct air capture and regeneration"
-          image={ChemE_Cube}/>
+          image={ChemE_Cube} link = "/chemeCube"/>
 
         </div>
         <Link className={styles.exploreButton} href="/projects">

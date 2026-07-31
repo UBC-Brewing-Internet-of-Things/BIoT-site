@@ -1,20 +1,24 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/components/CurrentProjectCard.module.css";
+import { useRouter } from 'next/navigation';
 
 
 
-function CurrentProjectCard({title, description,image}:{title: string, description: string, image: any}){
+function CurrentProjectCard({title, description,image, link}:{title: string, description: string, image: any, link: string}){
+    const router = useRouter();
     return(
         <div className = {styles.container}>
-            <Link href="/biofluorescentBeer">
-                <Image
-                src={image}
-                width={350}
-                height={270}
-                alt={title}
-                />
-            </Link>
+         
+            <Image 
+            onClick={() => router.push(link)}
+            src={image}
+            width={350}
+            height={270}
+            alt={title}
+            />
+           
             <h3 className = {styles.title}>{title}</h3>
             <h4 className = {styles.description}><i>{description}</i></h4>
             
