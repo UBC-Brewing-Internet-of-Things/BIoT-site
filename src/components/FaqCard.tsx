@@ -8,8 +8,8 @@ function FaqCard ({question, answer}: {question: string, answer: string}) {
 
     return(
         <div className={styles.item}>
-            <div className = {styles.question}>
-                <h3 onClick={() => setDropdownQuestion(!dropdownQuestion)}>{question}</h3>
+            <div onClick={() => setDropdownQuestion(!dropdownQuestion)} className = {styles.question}>
+                <h3>{question}</h3>
                 <div onClick={() => setDropdownQuestion(!dropdownQuestion)} className = {`${styles.triangle} ${dropdownQuestion ? styles.active : ''}`}></div>
             </div>
             <p className = {`${styles.answer} ${dropdownQuestion ? styles.active : ''}`}>{answer}</p>

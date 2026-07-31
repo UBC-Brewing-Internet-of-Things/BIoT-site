@@ -1,8 +1,8 @@
 .item {
   background-color: white;
   border-radius: 10px;
-  padding: 2vw 4vw;
-  margin: 2vw 10vw;
+  padding: 0.5vw 4vw;
+  margin: 2vw 17vw;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
 }
 
@@ -28,7 +28,7 @@
 .item h3 {
   font-weight: 600;
   font-family: 'Merriweather', serif;
-  font-size: clamp(18px, 3vw, 30px);
+  font-size: clamp(18px, 3vw, 25px);
 }
 
 .triangle {
@@ -36,7 +36,7 @@
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 30px solid #000000;
+	border-top: 25px solid #000000;
 }
 
 @media (max-width: 768px) {
