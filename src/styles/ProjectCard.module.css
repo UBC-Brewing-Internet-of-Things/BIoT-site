@@ -10,6 +10,11 @@
   transition: all 0.2s;
   margin: 1vh 0;
 }
+
+.project:hover{
+  transform: scale(1.01);
+}
+
 .description {
   display: flex;
   flex-direction: row;
