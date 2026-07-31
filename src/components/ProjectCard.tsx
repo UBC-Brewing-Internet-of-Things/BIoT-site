@@ -1,10 +1,13 @@
+'use client';
 import styles from "@/src/styles/ProjectCard.module.css";
 import Image from "next/image";
-import ProjectImage from "../images/project_images/glow_in_the_darkbeer_project.jpg";
+import { useRouter } from 'next/navigation';
 
-function ProjectCard({title, description, date, team, image}: {title:string, description:string, date:string, team:string[], image:any}) {
+
+function ProjectCard({title, description, date, team, image, link}: {title:string, description:string, date:string, team:string[], image:any, link: string}) {
+  const router = useRouter();
   return (
-        <div className={styles.project} data-category="lab brew">
+        <div onClick={() => router.push(link)} className={styles.project} data-category="lab brew">
             <div className={styles.headings}>
                 <h3 className={styles.title}>{title}</h3>
                 <p className={styles.date}>{date}</p>
