@@ -10,8 +10,9 @@ import Link from 'next/link';
 export default function page() {
   return (
     <main className={styles.container}>
-      <h1>Applications For The 2025/26 Cycle Are Now Closed.</h1>
-      <p><b>Please follow our socials for more updates</b></p>
+      
+      <h1>Applications For The 2025/26 Cycle Are <span>OPEN</span></h1>
+      <p><b>Follow Our Socials For More Details</b></p>
       <div className={styles.logos}>
         <Link href="https://www.instagram.com/ubcbiot/">
             <Image 
@@ -27,6 +28,7 @@ export default function page() {
             height={40}
             width={40} />
         </Link>
+        
       </div>
       <hr className={styles.rectangle} />
       <h2>Why Join Us?</h2>
@@ -68,6 +70,14 @@ export default function page() {
       Whether you want to develop a new brewing technique,
       design an experiment, or write software, there’s a place for you here.
       </p>
+
+      <div className={styles.joinUs}>
+        <Link className={styles.joinButton} href="/recruitment">
+          Apply Here!
+        </Link>
+      </div>
+      
+
 
 
     </main>

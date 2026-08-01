@@ -113,5 +113,10 @@
   .bar3.active {
     transform: translate(0, -7px) rotate(45deg);
   }
+
+  .joinButton {
+    margin-right: 10px;
+    
+  }
   
 }

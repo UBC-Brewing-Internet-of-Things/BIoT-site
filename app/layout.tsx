@@ -1,4 +1,4 @@
-/*Layout given in Next.js */
+
 import Head from "next/head";
 import Link from 'next/link';
 import Navbar from "../src/components/Navbar";
@@ -28,7 +28,6 @@ export default function DashboardLayout({
       <body>
         <Navbar />
         {children}
-        <InterestButton />
         <Footer />
       </body>
     </html>

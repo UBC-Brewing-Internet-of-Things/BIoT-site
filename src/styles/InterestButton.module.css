@@ -38,5 +38,10 @@
     margin: 10px 0;
   }
 
+  .joinButton{
+    font-size: 20px;
+    border-radius: 3vw;
+  }
+
 
 }
