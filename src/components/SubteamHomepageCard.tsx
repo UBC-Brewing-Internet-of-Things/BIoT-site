@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import styles from '../styles/SubteamHomepageCard.module.css';
 
-function SubteamHomepageCard({image, description, title}: {image:any, description:string, title:string}) {
+function SubteamHomepageCard({image, description, title, color}: {image:any, description:string, title:string, color: string}) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${color == "green" ? styles.green : styles.beige}`}>
         <Image 
           src={image}
           alt={title}
@@ -13,9 +13,6 @@ function SubteamHomepageCard({image, description, title}: {image:any, descriptio
             <h3>{title}</h3>
             <p>{description}</p>
         </div>
-
-
-
     
     
     

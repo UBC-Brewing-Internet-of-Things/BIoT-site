@@ -7,9 +7,13 @@ import Image from "next/image";
 import Biofluorescent_Beer from "../src/images/project_images/glow_in_the_darkbeer_project.jpg";
 import Link from "next/link";
 import CurrentProjectCard from "@/src/components/CurrentProjectCard";
-import ChemE_Cube from "../src/images/project_images/biofluorescent_beer_project.jpg";
+import ChemE_Cube from "../src/images/project_images/cheme_cube.jpg";
 
 export default function Page() {
+  const beerRnD = subteamsDescription.slice(0, 3);
+  const chemECube = subteamsDescription.slice(3);
+
+  subteamsDescription
   return (
   <main className={styles.container}>
     <div className={styles.parallax} style={{backgroundImage: `url(${HomepageImage.src})`}}>
@@ -29,8 +33,8 @@ export default function Page() {
         <div className = {styles.projects}>
           <CurrentProjectCard
           title="Biofluorescent Beer"
-          description="Use of yeast as a vector to express Green Fluorescent Protein (GFP)"
-          image={Biofluorescent_Beer} link = "/biofluorescent-beer"/> 
+          description="Engineering yeast to produce glow-in-the-dark beer using green fluorescent protein."
+          image={Biofluorescent_Beer} link = "/biofluorescentBeer"/> 
           <CurrentProjectCard
           title="ChemE Cube"
           description=" 1 cubic foot plant that solves direct air capture and regeneration"
@@ -46,8 +50,13 @@ export default function Page() {
 
     </div>
     <h1>Meet the Subteams</h1>
-    {subteamsDescription.map((item,index) => (
-      <SubteamHomepageCard key={index} image={item.image} description={item.description} title={item.title}/>
+    <h2>Beer R&D</h2>
+    {beerRnD.map((item,index) => (
+      <SubteamHomepageCard key={index} image={item.image} description={item.description} title={item.title} color = {item.color}/>
+    ))}
+    <h2 style={{ marginTop: '80px' }}>ChemE Cube</h2>
+    {chemECube.map((item,index) => (
+      <SubteamHomepageCard key={index} image={item.image} description={item.description} title={item.title} color = {item.color}/>
     ))}
   </main>
   );

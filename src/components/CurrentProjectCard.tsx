@@ -14,8 +14,7 @@ function CurrentProjectCard({title, description,image, link}:{title: string, des
             <Image 
             onClick={() => router.push(link)}
             src={image}
-            width={350}
-            height={270}
+            className = {styles.image}
             alt={title}
             />
            

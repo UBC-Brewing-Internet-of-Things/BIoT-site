@@ -6,6 +6,12 @@
   margin-left: 8%;
 }
 
+.container h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: clamp(30px, 3vw, 33px);
+}
+
 .parallax {
   min-height: 630px;
 
@@ -98,5 +104,28 @@
   .parallax{
     min-height: 550px;
   }
+
+  .projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectContainer{
+  background-color: #F3F0EF;
+  width: 100%;
+  padding-top: 1px;
+  height: 750px;
+}
+.exploreButton {
+  border-radius: 1.75vw;
+  padding: 1.5vw 1.5vw;
+  font-size: 15px;
+  width: 100px;
+}
+
+.container h2{
+  font-size: clamp(25px, 3vw, 30px);
+}
 
 }
