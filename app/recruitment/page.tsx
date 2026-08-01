@@ -8,11 +8,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function page() {
+  const applicationOpen = false; // Change this to true when applications are open and add link to application forms
   return (
     <main className={styles.container}>
-      
-      <h1>Applications For The 2025/26 Cycle Are <span>OPEN</span></h1>
-      <p><b>Follow Our Socials For More Details</b></p>
+      {applicationOpen ? (
+        <h1>Applications For The 2025/26 Cycle Are <span>OPEN</span></h1>
+      ) : (
+        <h1>Applications For The 2025/26 Cycle Are Now Closed.</h1>
+      )}
+      <p><b>Follow Our Socials For More Information</b></p>
       <div className={styles.logos}>
         <Link href="https://www.instagram.com/ubcbiot/">
             <Image 
@@ -70,12 +74,13 @@ export default function page() {
       Whether you want to develop a new brewing technique,
       design an experiment, or write software, there’s a place for you here.
       </p>
-
+      {applicationOpen && 
       <div className={styles.joinUs}>
         <Link className={styles.joinButton} href="/recruitment">
           Apply Here!
         </Link>
-      </div>
+      </div>}
+      
       
 
 
