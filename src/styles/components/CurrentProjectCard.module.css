@@ -20,4 +20,23 @@
     margin: 10px 30px;
 }
 
+.image{
+    width: 350px;
+    height: 270px;
+    
+}
+
+@media (max-width: 768px) {
+    .container{
+        margin: 20px;
+    }
+    .image{
+        width: 250px;
+        height: 175px;
+    }
+    .description{
+        width: 100%;
+    }
+}
+
 

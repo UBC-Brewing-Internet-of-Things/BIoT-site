@@ -24,7 +24,6 @@
   width: 100%;
   text-align: left;
   padding: 0 20px;
-
 }
 .headings {
   width: 100%;
@@ -70,5 +69,6 @@
   .text {
     text-align: center;
     padding: 0;
+    font-size: clamp(10px, 5vw, 13px)
   }
 }

@@ -39,11 +39,11 @@ export default function page() {
       <div className={styles.projectDisplay}>
         {/* Filter buttons */}
         <div className={styles.filter}>
-              <button className={selectedTeams.length === 0 ? styles.active : ""} onClick={resetFilters} >All</button>
-              <button className={selectedTeams.includes("Lab Team") ? styles.active : ""} onClick={() => filter("Lab Team")}>Lab Team</button>
-              <button className={selectedTeams.includes("Instrumentation Team") ? styles.active : ""} onClick={() => filter("Instrumentation Team")}>Instrumentation Team</button>
-              <button className={selectedTeams.includes("Brew Team") ? styles.active : ""} onClick={() => filter("Brew Team")}>Brew Team</button>
-              <button className={selectedTeams.includes("ChemE Cube") ? styles.active : ""} onClick={() => filter("ChemE Cube")}>ChemE Cube</button>
+          <button className={selectedTeams.length === 0 ? styles.active : ""} onClick={resetFilters} >All</button>
+          <button className={selectedTeams.includes("Lab Team") ? styles.active : ""} onClick={() => filter("Lab Team")}>Lab Team</button>
+          <button className={selectedTeams.includes("Instrumentation Team") ? styles.active : ""} onClick={() => filter("Instrumentation Team")}>Instrumentation Team</button>
+          <button className={selectedTeams.includes("Brew Team") ? styles.active : ""} onClick={() => filter("Brew Team")}>Brew Team</button>
+          <button className={selectedTeams.includes("ChemE Cube") ? styles.active : ""} onClick={() => filter("ChemE Cube Team")}>ChemE Cube</button>
         </div>
         
         {filteredProjects.map((item,index)=> (

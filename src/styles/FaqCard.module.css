@@ -28,7 +28,7 @@
 .item h3 {
   font-weight: 600;
   font-family: 'Merriweather', serif;
-  font-size: clamp(18px, 3vw, 25px);
+  font-size: clamp(14px, 3vw, 25px);
 }
 
 .triangle {
@@ -47,8 +47,8 @@
   .triangle {
   width: 0;
 	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 20px solid #000000;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 13px solid #000000;
   }
 }
