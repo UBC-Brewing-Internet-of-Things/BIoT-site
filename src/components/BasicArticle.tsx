@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import styles from '../styles/BasicArticle.module.css';
+import styles from '../styles/components/BasicArticle.module.css';
 
+//"summary" props is optional at the moment
 function BasicArticle({title, summary, description, date, team, image1, image2, image3}: {title: string, summary: string, description: string, date: string, team: string[], image1: any, image2: any, image3: any}) {
     return (
         <div className={styles.container}>

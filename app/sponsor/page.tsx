@@ -15,6 +15,7 @@ export default function page() {
       BIoT focuses on bridging the gap between theory and practice by providing hands-on experience in brewing and programming. With projects centered around the Internet of Things, we aim to develop low-cost, innovative solutions for automated brewing systems. Students gain valuable skills in process control, data analysis, and teamwork, preparing them for successful careers in the industry.
       <br/><br/>
       By sponsoring BIoT, you not only contribute to the education and development of aspiring engineers but also support the advancement of sustainable brewing practices. Join us as we explore new frontiers in brewing technology and strive to make a positive impact on both our industry and our planet.</p>
+      {/*Sponsorship Package*/}
       <div className={styles.info}>
         <div className={styles.sponsorPackageText}>
           <h2 style={{textAlign: 'left'}}>Sponsorship Package</h2>
@@ -24,6 +25,7 @@ export default function page() {
         <Image src={sponsorshipPackage} alt="Sponsorship Package" className={styles.image} />
         </Link>
       </div>
+      
       <h2>Our Sponsors</h2>
       <h3>Platinum Sponsors</h3>
       <div className={styles.tieredContainer}>

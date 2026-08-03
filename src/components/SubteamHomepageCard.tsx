@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import styles from '../styles/SubteamHomepageCard.module.css';
+import styles from '../styles/components/SubteamHomepageCard.module.css';
 
-function SubteamHomepageCard({image, description, title, color}: {image:any, description:string, title:string, color: string}) {
+export default function SubteamHomepageCard({image, description, title, color}: {image:any, description:string, title:string, color: string}) {
   return (
     <div className={`${styles.container} ${color == "green" ? styles.green : styles.beige}`}>
+      {/*Change color based on given props (green for ChemE cube team)*/}
         <Image 
           src={image}
           alt={title}
@@ -19,15 +20,3 @@ function SubteamHomepageCard({image, description, title, color}: {image:any, des
     </div> 
   );
 }
-export default SubteamHomepageCard;
-/*<div class="subteam-container">
-        <div class="subteam-image-container">
-          <img src="home_images/instrumentation.png" class="subteam-image"/>
-        </div>
-        <div class="subteam-text">
-          <h3>Instrumentation Team</h3>
-          <p>The instrumentation team is responsible for creating equipment to sense brew data and automate tasks
-            associated with the brewing process, and culminate it into a central web app. Common parameters to control are
-            temperature, pH, dissolved oxygen, and specific gravity.</p>
-        </div>
-        */

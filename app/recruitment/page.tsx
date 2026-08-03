@@ -11,6 +11,7 @@ export default function page() {
   const applicationOpen = false; // Change this to true when applications are open and add link to application forms
   return (
     <main className={styles.container}>
+      {/*Conditional display*/}
       {applicationOpen ? (
         <h1>Applications For The 2025/26 Cycle Are <span>OPEN</span></h1>
       ) : (
@@ -35,6 +36,8 @@ export default function page() {
         
       </div>
       <hr className={styles.rectangle} />
+
+
       <h2>Why Join Us?</h2>
       <p>BIoT is a student-led team dedicated to recreating the industrial brewing process on a home-brewing scale using:</p>
       <div className={styles.tableIcons}>
@@ -74,6 +77,8 @@ export default function page() {
       Whether you want to develop a new brewing technique,
       design an experiment, or write software, there’s a place for you here.
       </p>
+      
+      {/*Conditional display*/}
       {applicationOpen && 
       <div className={styles.joinUs}>
         <Link className={styles.joinButton} href="/recruitment">

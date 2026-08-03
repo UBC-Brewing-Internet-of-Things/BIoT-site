@@ -1,4 +1,4 @@
-import styles from '../styles/TeamCard.module.css';
+import styles from '../styles/components/TeamCard.module.css';
 import Image from 'next/image';
 
 

@@ -16,6 +16,7 @@ export default function Page() {
   subteamsDescription
   return (
   <main className={styles.container}>
+    {/*Main Section*/}
     <div className={styles.parallax} style={{backgroundImage: `url(${HomepageImage.src})`}}>
       
       <div className={styles.home_title}>
@@ -27,6 +28,7 @@ export default function Page() {
         <p>Known as “UBC’s beer-brewing design team”, Biological Internet of Things (BIoT) has expanded to include a variety of projects in process control, R&D, and automation, including building a miniature chemical plant for the ChemE Cube competition, IoT process automation devices, and experimental research projects in food technology like making glow-in-the-dark beer.</p>
       </div>
     </div>
+    {/*Current Project Section*/}
     <div className = {styles.projectContainer}>
       <h1>Current Projects</h1>
       <div className = {styles.projectsButtonContainer}>
@@ -45,10 +47,8 @@ export default function Page() {
           Explore More
         </Link>                           
       </div>
-      
-      
-
     </div>
+    {/*Meet the Subteams, R&D claims first three subteams in subteamsDescription list while ChemE Cube claims the rest*/}
     <h1>Meet the Subteams</h1>
     <h2>Beer R&D</h2>
     {beerRnD.map((item,index) => (

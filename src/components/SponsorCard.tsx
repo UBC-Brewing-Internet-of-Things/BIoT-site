@@ -1,8 +1,8 @@
-import styles from '../styles/SponsorCard.module.css';
+import styles from '../styles/components/SponsorCard.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-function SponsorCard({name, image, link}: {name: string, image: any, link: string}) {
+export default function SponsorCard({name, image, link}: {name: string, image: any, link: string}) {
     return (
         <div>
           <div className={styles.container}>
@@ -15,11 +15,3 @@ function SponsorCard({name, image, link}: {name: string, image: any, link: strin
     );
 
 }
-
-export default SponsorCard;
-/*          <div className={styles.tieredSponsorImageBox}>
-            <a className={styles.tieredSponsorImageLink} href="https://engineering.ubc.ca" target="_blank" rel="noopener noreferrer">
-              <img className={styles.tieredSponsorImage} src="sponsor images/ubc_engineering.png" alt="UBC Engineering Logo" />
-            </a>
-            <p>UBC Engineering</p>
-          </div> */

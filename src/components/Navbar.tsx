@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/Navbar.module.css';
+import styles from '../styles/components/Navbar.module.css';
 import Logo from '../images/logo_images/white_logo_text.png';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
@@ -14,6 +14,7 @@ function Navbar(){
     return(
         <>  
         <div className={styles.navbar}>
+          {/*Mobile Specific Style + Reverse menuOpen state on click & change to/from its active style*/}
           <div className={styles.mobileNavbar} onClick={() => setMenuOpen(!menuOpen)}>
             <div className = {`${styles.bar1} ${menuOpen ? styles.active : ''}`}></div>
             <div className = {`${styles.bar2} ${menuOpen ? styles.active : ''}`}></div>
@@ -24,7 +25,7 @@ function Navbar(){
             alt="UBC BIoT Logo"
             className={styles.navbarLogo} />
           </Link>
-
+          {/*PC specific style*/}
           <div className = {styles.pcNavbar}>
             <Link href="/" className={styles.text}>Home</Link>
             <Link href="/projects" className={styles.text}>Projects</Link>
@@ -36,6 +37,7 @@ function Navbar(){
           <button onClick={() => router.push("/recruitment")} className={styles.joinButton}>Join Us</button>
           
         </div>
+        {/*Mobile Specific Style*/}
         <div className={`${styles.mobileMenu} ${menuOpen ? styles.active : ''}`}>
           <Link href="/" className={styles.mobileLink}>Home</Link>
           <Link href="/projects" className={styles.mobileLink}>Projects</Link>

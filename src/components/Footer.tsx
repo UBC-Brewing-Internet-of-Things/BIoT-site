@@ -1,17 +1,19 @@
 'use client';
 import { usePathname } from "next/navigation";
-import styles from '../styles/Footer.module.css';
+import styles from '../styles/components/Footer.module.css';
 import Logo from '../images/logo_images/logo_with_text.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import InterestButton from './InterestButton';
 
 
-function Footer(){
+export default function Footer(){
 const pathname = usePathname();
+{/*Hide if the current path name is /recruitment*/}
   const hiddenRoutes =  ["/recruitment/"].includes(pathname);
     return (
       <>
+      {/*Conditional display based on path name*/}
         {!hiddenRoutes && <InterestButton/>}
         
         <footer className={styles.footer}>
@@ -47,32 +49,3 @@ const pathname = usePathname();
       
     );
 }
-
-export default Footer;
-
-/*
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img class="footer-logo-img" src="logo-with-text.png" />
-      </div>
-
-      <div class="footer-links">
-        <div>
-          <h3>Resources</h3>
-          <a href="https://github.com/UBC-Brewing-Internet-of-Things">GitHub</a>
-        </div>
-        <div>
-          <h3>Contact</h3>
-          <a href="sponsor.html">Sponsorships</a><br>
-          <a href="mailto:ubcbiot@gmail.com">General Inquiries</a>
-        </div>
-        <div>
-          <h3>Socials</h3>
-          <a href="https://www.instagram.com/ubcbiot/">Instagram</a><br>
-          <a href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-    <p class="footer-copy">@ 2025 UBC Biological Internet of Things</p>
-  </footer> */
