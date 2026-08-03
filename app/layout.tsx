@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import InterestButton from "../src/components/InterestButton";
-import "../src/styles/globals.css";
+import "../src/styles/globals.css"; //ignore error, this is the global stylesheet for the entire app
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
