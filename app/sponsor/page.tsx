@@ -1,7 +1,7 @@
 import styles from '../../src/styles/Sponsor.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import sponsorshipPackage from '../../src/images/sponsor_images/BIoT_Sponsorship_Package_2025.png';
+import sponsorshipPackage from '../../src/images/sponsor_images/BIoT_Sponsorship_Package_2526.png';
 import SponsorCard from '@/src/components/SponsorCard';
 import {sponsors} from '@/src/data/sponsorsData';
 
@@ -21,7 +21,7 @@ export default function page() {
           <h2 style={{textAlign: 'left'}}>Sponsorship Package</h2>
           <p>Unlock the potential of tomorrow's engineers with a sponsorship from UBC Biological Internet of Things (BIoT)! Our sponsorship package offers an exclusive opportunity to support student-led innovation in brewing and technology while gaining visibility among a diverse audience of aspiring engineers and industry professionals. Join us in shaping the future of brewing and sustainability. Contact us today to explore partnership opportunities!</p>
         </div>
-        <Link href="https://www.canva.com/design/DAGz8gEoIGg/wgecpnlrlIVxqHmQZE1k_w/view?utm_content=DAGz8gEoIGg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h12b1279685">
+        <Link href="https://drive.google.com/file/d/1Be9r7AWDOYDRoCpGzTZTHKS2uMpgLdT_/view">
         <Image src={sponsorshipPackage} alt="Sponsorship Package" className={styles.image} />
         </Link>
       </div>
