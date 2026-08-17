@@ -25,8 +25,8 @@ export const subteams = {
         {name: "Lauren Song", role: "Instrumentation Team Member", peopleImages: peopleImages.Lauren_Song} 
     ],
     Brew: [
-        { name: "Eunseol Ko", role: "Brew Team Lead", peopleImages: peopleImages.Eunseol_Ko },
-        { name: "Chester Carey", role: "Brew Team Member", peopleImages: peopleImages.Chester_Carey },
+        { name: "Chester Carey", role: "Brew Team Lead", peopleImages: peopleImages.Chester_Carey },
+        { name: "Eunseol Ko", role: "Brew Team Member", peopleImages: peopleImages.Eunseol_Ko },
         { name: "Luke Kojima", role: "Brew Team Member", peopleImages: peopleImages.Luke_Kojima },
         { name: "Ignacio Barros", role: "Brew Team Member", peopleImages: peopleImages.Ignacio_Barros },
         { name: "Melissa Xie", role: "Brew Team Member", peopleImages: peopleImages.Melissa_Xie },
@@ -37,17 +37,19 @@ export const subteams = {
         { name: "Mark Baumgart", role: "Brew Team Member", peopleImages: peopleImages.placeholder },
     ],
     Lab: [
-        { name: "Ilenna Wen", role: "Lab Team Lead", peopleImages: peopleImages.Ilenna_Wen },
+        { name: "Jeffery To", role: "Lab Team Lead", peopleImages: peopleImages.Jeffery_To },
+        { name: "Ilenna Wen", role: "Lab Team Member", peopleImages: peopleImages.Ilenna_Wen },
         { name: "Michelle Peng", role: "Lab Team Lead", peopleImages: peopleImages.Michelle_Peng },
         { name: "Maximillian Wu", role: "Lab Team Member", peopleImages: peopleImages.Maximillian_Wu },
         { name: "Shuhan Wang", role: "Lab Team Member", peopleImages: peopleImages.Shuhan_Wang },
         { name: "Jay Huang", role: "Lab Team Member", peopleImages: peopleImages.Jay_Huang },
         { name: "Nathan Zhao", role: "Lab Team Member", peopleImages: peopleImages.Nathan_Zhao },
         { name: "Amanda Morales", role: "Lab Team Member", peopleImages: peopleImages.Amanda_Morales },
-        { name: "Jeffery To", role: "Lab Team Member", peopleImages: peopleImages.Jeffery_To },
+
   ],
   Cheme: [
         { name: "Shuhan Wang", role: "ChemE Cube Team Lead", peopleImages: peopleImages.Shuhan_Wang},
+        { name: "Stephanie Segin", role: "ChemE Cube Team Lead", peopleImages: peopleImages.Stephanie_Segin},
         { name: "Jeffrey To", role: "ChemE Cube Member", peopleImages: peopleImages.Jeffery_To},
         { name: "Michelle Peng", role: "ChemE Cube Member", peopleImages: peopleImages.Michelle_Peng},
         { name: "Ilenna Wen", role: "ChemE Cube Member", peopleImages: peopleImages.Ilenna_Wen},
@@ -60,7 +62,6 @@ export const subteams = {
         { name: "Julia Cabsaba", role: "ChemE Cube Member", peopleImages: peopleImages.Julia_Cabsaba},
         { name: "Sierra Toderel", role: "ChemE Cube Member", peopleImages: peopleImages.Sierra_Toderel},
         { name: "Sophia Cross", role: "ChemE Cube Member", peopleImages: peopleImages.Sophia_Cross},
-        { name: "Stephanie Segin", role: "ChemE Cube Member", peopleImages: peopleImages.Stephanie_Segin},
         { name: "Melissa Xie", role: "ChemE Cube Member", peopleImages: peopleImages.Melissa_Xie}
         
 
