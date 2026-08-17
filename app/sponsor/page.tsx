@@ -39,7 +39,7 @@ export default function page() {
           <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
         ))}
       </div>
-      <h3 className={styles.sponsorTierHeading}>Supporters</h3>
+      <h3 className={styles.sponsorTierHeading}>Other Supporters</h3>
       <div className={styles.tieredContainer}>
         {sponsors.Supporters.map((sponsor, index) => (
           <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
