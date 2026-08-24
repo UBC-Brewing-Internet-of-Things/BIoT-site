@@ -10,6 +10,10 @@
   font-family: 'Merriweather', serif;
 }
 
+.page p{
+  text-align: center;
+}
+
 .page {
   margin-top: 5%;
   margin: 0%;

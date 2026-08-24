@@ -1,12 +1,11 @@
 import { sponsorLogos } from "@/src/images/sponsor_images/sponsor_logos";
-import { link } from "fs";
-import { title } from "process";
+
 
 export const sponsors = {
-    Platinum : [
+    Gold : [
         {title: "UBC Engineering", logo: sponsorLogos.ubc_engineering, link: "https://engineering.ubc.ca"},
         {title: "Tydra Laboratories", logo: sponsorLogos.tydra_laboratories, link: "https://www.tydralabs.com/"},
-        
+        {title: "UBC CHBE", logo: sponsorLogos.ubc_chbe, link: "https://www.chebe.ubc.ca/"}
     ],
 
     Silver: [
