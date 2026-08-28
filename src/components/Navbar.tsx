@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/components/Navbar.module.css';
-import Logo from '../images/logo_images/white_logo_text.png';
+import Logo from '../images/logo_images/colourful biotlogo in circle.png';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
