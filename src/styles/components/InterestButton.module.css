@@ -13,9 +13,9 @@
 }
 
 .joinButton {
-  background-color: #000033;
+  background-color: #258D42;
   border-radius: 2vw;
-  padding: 1.5vw 1.5vw;
+  padding: 1vw 1.5vw;
   height: fit-content;
   display: inline-block;
   transition: all 0.2s;

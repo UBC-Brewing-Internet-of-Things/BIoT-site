@@ -12,41 +12,33 @@
   font-size: clamp(30px, 3vw, 33px);
 }
 
-.parallax {
-  min-height: 630px;
+.titlebackground {
+  height: 600px;
+}
 
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  position: relative; /* ensure absolutely positioned children are positioned relative to this container */
+.rectangle_text{
+  background-color: #E8EFE9;
+  padding: 2.2% 18% 10% 18%;
+  text-align: center;
 }
 
 .home_title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); /* center horizontally & vertically */
-  width: 60%;
-  text-align: center;
-  color: #ffffff;
-  padding: 1rem;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  justify-content: center;
+  display: flex;
+  padding: 10% 0% 1% 0%;
+  align-items: center;
+  
 }
 
-
-.home_title p {
-  font-size: clamp(10px, 3vw, 18px);
-  font-family: Merriweather, serif;
-  margin: 0;
+.arrows{
+  width: 15%;
+  height: 15%;
 }
+
 
 .home_logo{
-  width: 70%;
+  width: 50%;
   height: auto;
-  margin-bottom: -3%;
 }
 
 .projects{
@@ -56,7 +48,7 @@
 }
 
 .projectContainer{
-  background-color: #F3F0EF;
+  background-color: white;
   width: 100%;
   padding-top: 1px;
   height: 575px;
@@ -68,10 +60,17 @@
   align-items: center;
 }
 
+.leaf{
+  position: absolute;
+  top: 850px;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
 
 
 .exploreButton {
-  background-color: #000033;
+  background-color: #19382d;
   border-radius: 0.75vw;
   padding: 1vw 1vw;
   height: fit-content;
