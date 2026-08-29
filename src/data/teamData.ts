@@ -2,15 +2,11 @@ import { peopleImages } from "../images/headshots_2025";
 
 export const subteams = {
     Captain: [
-        { name: "Edan Steen", role: "Co-Captain", peopleImages: peopleImages.Edan_Steen},
-        { name: "Dominic Rousseau", role: "Co-Captain", peopleImages: peopleImages.Dominic_Rousseau }
+        { name: "Edan Steen", role: "Co-Captain", peopleImages: peopleImages.Edan_Steen}
     ],
     Admin:  [
         { name: "Darren Hartono", role: "Marketing & Events Coordinator", peopleImages: peopleImages.Darren_Hartono },
-        { name: "Zoe Shong", role: "Web Developer", peopleImages: peopleImages.Zoe_Shong },
         { name: "Sophie You", role: "Web Developer", peopleImages: peopleImages.Sophie_You },
-        { name: "Chehan Arachchi", role: "Finance Coordinator", peopleImages: peopleImages.Chehan_Mallawa_Arachchi },
-        { name: "Ryan Parissay", role: "Marketing & Events Coordinator", peopleImages: peopleImages.Ryan_Parissay },
         {name: "Clara Sitohang", role: "Marketing & Events Coordinator", peopleImages: peopleImages.Clara_Sitohang}
     ],
     Instrumentation: [

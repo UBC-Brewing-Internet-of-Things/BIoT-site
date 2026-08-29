@@ -11,23 +11,20 @@ function BasicArticle({title, summary, description, date, team, image1, image2, 
                     <p className = {styles.info}><i>{date}</i>, {team.join(', ')}</p>
                 </div>
             </div>
-            <div>
+            <div className = {styles.imageContainer}>
                 <Image 
                 src={image1} 
                 alt={title}
-                height={300} 
-                width={300} />
-                <div>
+                className = {styles.image1}/>
+                <div className = {styles.smallImageContainer}>
                     <Image
                     src={image2} 
                     alt={title}
-                    height={300} 
-                    width={300}/>
+                    className = {styles.image2}/>
                     <Image
                     src={image3} 
                     alt={title}
-                    height={300} 
-                    width={300}/>
+                    className = {styles.image3}/>
                 </div>
             </div>
             

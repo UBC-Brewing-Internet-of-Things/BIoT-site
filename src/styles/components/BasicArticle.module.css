@@ -12,6 +12,30 @@
     text-align: center;
 }
 
+.image1{
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.image2, .image3{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.smallImageContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
 .info{
     text-align: center;
     font-weight:200;
