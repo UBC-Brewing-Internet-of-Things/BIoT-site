@@ -61,7 +61,7 @@
   z-index: 5;
   position: fixed;
   flex-direction: column;
-  top: 10%;
+  top: 9%;
 }
 
 
@@ -73,7 +73,7 @@
 
   .mobileLink{
     text-decoration: none;
-    background-color: #000033;
+    background-color: #3a864f;
     color: white;
     padding: 9px;
     text-align: center;

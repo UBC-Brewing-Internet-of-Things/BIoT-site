@@ -27,7 +27,6 @@
   display: flex;
   padding: 10% 0% 1% 0%;
   align-items: center;
-  
 }
 
 .arrows{
@@ -92,17 +91,29 @@
 
 @media (max-width: 768px) {
   .home_title {
-    width: 90%;
-    padding: 0.5rem;
+    padding: 30% 0% 2% 0%;
   }
 
   .home_logo{
-    width: 100%;
+    width: 80%;
+  }
+  .arrows{
+  width: 10%;
+  height: 10%;
   }
 
-  .parallax{
-    min-height: 550px;
+  .titlebackground {
+  height: 450px;
+}
+
+  .rectangle_text{
+  padding: 2.2% 18% 10% 18%;
+}
+
+  .leaf{
+  top: 1100px;
   }
+
 
   .projects{
   display: flex;
@@ -111,7 +122,6 @@
 }
 
 .projectContainer{
-  background-color: #F3F0EF;
   width: 100%;
   padding-top: 1px;
   height: 750px;
