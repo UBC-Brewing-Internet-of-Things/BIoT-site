@@ -29,6 +29,11 @@
   gap: 3%;
 }
 
+.icon{
+  height: 5vw;
+  width: auto;
+}
+
 .icons{
   display: flex;
   gap: 10px;
@@ -48,6 +53,10 @@
   margin-bottom: 20px;
 }
 
+.logo{
+    height: 5vw;
+    width: auto;
+  }
 .joinUs {
   display: flex;
   flex-direction: row;
@@ -76,6 +85,14 @@
     justify-self: center;
     padding: 0;
     margin-top: 30%;
+  }
+
+  .icon{
+    height: 10vw;
+  }
+
+  .logo{
+    height: 10vw;
   }
 
 }

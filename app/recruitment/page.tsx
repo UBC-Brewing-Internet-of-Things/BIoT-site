@@ -23,15 +23,13 @@ export default function page() {
             <Image 
             src={InstagramLogo} 
             alt="Instagram Logo" 
-            height={40}
-            width={40}/>
+           className={styles.logo}/>
         </Link>
         <Link href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">
             <Image 
             src={LinkedinLogo} 
             alt="LinkedIn Logo" 
-            height={40}
-            width={40} />
+            className={styles.logo} />
         </Link>
         
       </div>
@@ -45,24 +43,21 @@ export default function page() {
           <Image 
           src={icon1} 
           alt="Sensors Icon"
-          height={50}
-          width={50}/>
+          className={styles.icon}/>
           <p><b>Sensors</b></p>
         </div>
         <div className={styles.icons}>
           <Image 
           src={icon2} 
           alt="Automation Icon"
-          height={50}
-          width={50}/>
+          className={styles.icon}/>
           <p><b>Automation</b></p>
         </div>
         <div className={styles.icons}>
           <Image 
           src={icon3} 
           alt="Bioengineering Icon"
-          height={50}
-          width={50}/>
+          className={styles.icon}/>
           <p><b>Bioengineering</b></p>
         </div>
       </div>
