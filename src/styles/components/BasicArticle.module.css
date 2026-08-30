@@ -41,3 +41,9 @@
     font-weight:200;
 }
 
+
+@media (max-width: 768px) {
+   .title{
+    margin-top: 30%;
+    }
+}
