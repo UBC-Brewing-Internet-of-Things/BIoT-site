@@ -13,7 +13,7 @@
 }
 
 .titlebackground {
-  height: 600px;
+  height: 10%;
 }
 
 .rectangle_text{
@@ -27,6 +27,7 @@
   display: flex;
   padding: 10% 0% 1% 0%;
   align-items: center;
+  position: relative;
 }
 
 .arrows{
@@ -61,7 +62,7 @@
 
 .leaf{
   position: absolute;
-  top: 850px;
+  top: 950px;
   right: 0;
   width: 10%;
   height: auto;
@@ -71,7 +72,7 @@
 .exploreButton {
   background-color: #142942;
   border-radius: 0.75vw;
-  padding: 1vw 1vw;
+  padding: 0.75vw 0.75vw;
   height: fit-content;
   display: inline-block;
   transition: all 0.2s;
@@ -87,6 +88,13 @@
 .exploreButton:hover {
   transform: scale(1.02);
 }
+
+@media (min-width: 1780px) {
+  .leaf{
+    display:none;
+  }
+}
+
 
 
 @media (max-width: 768px) {

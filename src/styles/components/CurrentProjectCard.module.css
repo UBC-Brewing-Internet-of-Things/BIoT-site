@@ -1,12 +1,12 @@
 .title{
     font-weight: 400;
-    font-size: clamp(20px, 3vw, 25px);
+    font-size: clamp(20px, 1.25vw, 35px);
     margin: 10px;
 }
 
 .description{
     font-weight: 400;
-    font-size: clamp(10px, 3vw, 15px);
+    font-size: clamp(10px, 1vw, 20px);
     margin: 0;
     white-space: normal;
     width: 350px;

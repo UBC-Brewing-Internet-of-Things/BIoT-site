@@ -16,7 +16,7 @@ html, body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
-  font-size: clamp(13px, 2vw, 20px);
+  font-size: clamp(13px, 1.5vw, 50px);
   line-height: 1.2;
 }
 

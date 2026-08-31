@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function page() {
-  const applicationOpen = false; // Change this to true when applications are open and add link to application forms
+  const applicationOpen = true; // Change this to true when applications are open and add link to application forms
   return (
     <main className={styles.container}>
       {/*Conditional display*/}
@@ -33,50 +33,11 @@ export default function page() {
         </Link>
         
       </div>
-      <hr className={styles.rectangle} />
-
-
-      <h2>Why Join Us?</h2>
-      <p>BIoT is a student-led team dedicated to recreating the industrial brewing process on a home-brewing scale using:</p>
-      <div className={styles.tableIcons}>
-        <div className={styles.icons}>
-          <Image 
-          src={icon1} 
-          alt="Sensors Icon"
-          className={styles.icon}/>
-          <p><b>Sensors</b></p>
-        </div>
-        <div className={styles.icons}>
-          <Image 
-          src={icon2} 
-          alt="Automation Icon"
-          className={styles.icon}/>
-          <p><b>Automation</b></p>
-        </div>
-        <div className={styles.icons}>
-          <Image 
-          src={icon3} 
-          alt="Bioengineering Icon"
-          className={styles.icon}/>
-          <p><b>Bioengineering</b></p>
-        </div>
-      </div>
-      <p>
-      We welcome curious undergraduate students from all backgrounds, especially those interested in brewing, chemical/biological engineering, and computer science <b>- no experience required! </b>
-      </p>
-      <p>Our 30-40 person team is divided into three sub-teams: <span>brewing and recipe design, bioengineering and assay development,
-      and hardware/software integration. </span >Each year, we tackle new projects, so if you have an idea you want to explore, this is the place to make it happen.
-      </p>
-      <p style={{marginTop: '40px'}}><b> If you’re excited to learn, build, and innovate, join us! </b> </p>
-      <p>
-      Whether you want to develop a new brewing technique,
-      design an experiment, or write software, there’s a place for you here.
-      </p>
       
       {/*Conditional display*/}
       {applicationOpen && 
       <div className={styles.joinUs}>
-        <Link className={styles.joinButton} href="/recruitment">
+        <Link className={styles.joinButton} href="https://linktr.ee/ubcbiot">
           Apply Here!
         </Link>
       </div>}

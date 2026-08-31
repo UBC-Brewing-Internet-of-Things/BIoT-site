@@ -2,7 +2,7 @@ import { peopleImages } from "../images/headshots_2025";
 
 export const subteams = {
     Captain: [
-        { name: "Edan Steen", role: "Co-Captain", peopleImages: peopleImages.Edan_Steen}
+        { name: "Edan Steen", role: "Captain", peopleImages: peopleImages.Edan_Steen}
     ],
     Admin:  [
         { name: "Darren Hartono", role: "Marketing & Events Coordinator", peopleImages: peopleImages.Darren_Hartono },

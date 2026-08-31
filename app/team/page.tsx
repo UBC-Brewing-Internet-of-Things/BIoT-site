@@ -6,7 +6,8 @@ export default function page() {
   return (
     <main className = {styles.container}>
       <h1 className={styles.header}>Our Team</h1>
-      <h2 className={styles.subtitle}>Captains</h2>
+  
+      <h2 className={styles.subtitle}>Admin</h2>
       <div className={styles.subteams}>
         {subteams.Captain.map((item, index) => (
           <TeamCard
@@ -16,9 +17,6 @@ export default function page() {
             peopleImages={item.peopleImages}
           />
         ))}
-      </div>
-      <h2 className={styles.subtitle}>Admin</h2>
-      <div className={styles.subteams}>
         {subteams.Admin.map((item, index) => (
           <TeamCard
             key={index}
