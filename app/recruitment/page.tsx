@@ -33,14 +33,20 @@ export default function page() {
         </Link>
         
       </div>
+      <h3>Apply Here!</h3>
+      <h3>↓↓↓↓↓↓↓↓↓↓</h3>
       
       {/*Conditional display*/}
       {applicationOpen && 
       <div className={styles.joinUs}>
-        <Link className={styles.joinButton} href="https://linktr.ee/ubcbiot">
-          Apply Here!
+        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1cnrgNT9wJgHlLfh8o2VDVSZWnukSlBKQvvx76kJ1KqI/edit">
+         ChemE Cube
+        </Link>
+        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1neQymMJreNoqjStfMwZV_7vMTBULgLENBBD0zKAvAy0/edit">
+          Beer R&D and Admin
         </Link>
       </div>}
+
       
       
 
