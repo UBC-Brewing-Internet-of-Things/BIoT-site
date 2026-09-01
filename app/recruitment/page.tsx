@@ -13,9 +13,9 @@ export default function page() {
     <main className={styles.container}>
       {/*Conditional display*/}
       {applicationOpen ? (
-        <h1>Applications For The 2025/26 Cycle Are <span>OPEN</span></h1>
+        <h1>Applications For The 2026/27 Cycle Are <span>OPEN</span></h1>
       ) : (
-        <h1>Applications For The 2025/26 Cycle Are Now Closed.</h1>
+        <h1>Applications For The 2026/27 Cycle Are Now Closed.</h1>
       )}
       <p><b>Follow Our Socials For More Information</b></p>
       <div className={styles.logos}>
