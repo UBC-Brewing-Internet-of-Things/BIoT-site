@@ -39,10 +39,10 @@ export default function page() {
       {/*Conditional display*/}
       {applicationOpen && 
       <div className={styles.joinUs}>
-        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1cnrgNT9wJgHlLfh8o2VDVSZWnukSlBKQvvx76kJ1KqI/edit">
+        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1cnrgNT9wJgHlLfh8o2VDVSZWnukSlBKQvvx76kJ1KqI">
          ChemE Cube
         </Link>
-        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1neQymMJreNoqjStfMwZV_7vMTBULgLENBBD0zKAvAy0/edit">
+        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1neQymMJreNoqjStfMwZV_7vMTBULgLENBBD0zKAvAy0">
           Beer R&D and Admin
         </Link>
       </div>}
