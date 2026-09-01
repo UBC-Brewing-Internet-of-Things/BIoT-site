@@ -20,35 +20,35 @@ export default function page() {
       <p><b>Follow Our Socials For More Information</b></p>
       <div className={styles.logos}>
         <Link href="https://www.instagram.com/ubcbiot/">
-            <Image 
-            src={InstagramLogo} 
-            alt="Instagram Logo" 
-           className={styles.logo}/>
-        </Link>
-        <Link href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">
-            <Image 
-            src={LinkedinLogo} 
-            alt="LinkedIn Logo" 
+          <Image
+            src={InstagramLogo}
+            alt="Instagram Logo"
             className={styles.logo} />
         </Link>
-        
+        <Link href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">
+          <Image
+            src={LinkedinLogo}
+            alt="LinkedIn Logo"
+            className={styles.logo} />
+        </Link>
+
       </div>
       <h3>Apply Here!</h3>
       <h3>↓↓↓↓↓↓↓↓↓↓</h3>
-      
-      {/*Conditional display*/}
-      {applicationOpen && 
-      <div className={styles.joinUs}>
-        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1cnrgNT9wJgHlLfh8o2VDVSZWnukSlBKQvvx76kJ1KqI">
-         ChemE Cube
-        </Link>
-        <Link className={styles.joinButton} href="https://docs.google.com/forms/d/1neQymMJreNoqjStfMwZV_7vMTBULgLENBBD0zKAvAy0">
-          Beer R&D and Admin
-        </Link>
-      </div>}
 
-      
-      
+      {/*Conditional display*/}
+      {applicationOpen &&
+        <div className={styles.joinUs}>
+          <Link className={styles.joinButton} href="https://docs.google.com/forms/d/e/1FAIpQLSf9-Eg3rsNIJ4pGP_7Mc5aur1bwH9yVwSBT07wGLeT9BNS5yg/viewform?usp=preview">
+            ChemE Cube
+          </Link>
+          <Link className={styles.joinButton} href="https://docs.google.com/forms/d/e/1FAIpQLSesAuxB1y7ew6v8pS5U5avKpxHbBrPwxjOb9E_mSBK_tFbrgw/viewform">
+            Beer R&D and Admin
+          </Link>
+        </div>}
+
+
+
 
 
 
