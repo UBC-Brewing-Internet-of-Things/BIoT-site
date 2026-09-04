@@ -30,25 +30,30 @@ export default function page() {
       </div>
       
       <h2>Our Sponsors</h2>
-      <h3>Diamond Sponsors</h3>
-      <div className={styles.tieredContainer}>
-        {sponsors.Gold.map((sponsor, index) => (
-          <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
-        ))}
-      </div>      
-      <h3 className={styles.sponsorTierHeading}>Silver Sponsors</h3>
-      <div className={styles.tieredContainer}>
-        {sponsors.Silver.map((sponsor, index) => (
-          <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
-        ))}
+      <div className={styles.sponsors}>
+        <div className = {styles.tieredContainer + ' ' + styles.diamond}>
+          <p className = {styles.tierTitle}>Diamond Sponsors</p>
+          {sponsors.Gold.map((sponsor, index) => (
+            <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
+          ))}
+        </div>
+    
+        <div className={styles.tieredContainer + ' ' + styles.silver}>
+          <p className = {styles.tierTitle}>Silver Sponsors</p>
+          {sponsors.Silver.map((sponsor, index) => (
+            <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
+          ))}
+        </div>
+        <div className={styles.tieredContainer + ' ' + styles.supporter}>
+          <p className = {styles.tierTitle}>Other Supporters</p>
+          {sponsors.Supporters.map((sponsor, index) => (
+            <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
+          ))}
+        </div>
       </div>
-      <h3 className={styles.sponsorTierHeading}>Other Supporters</h3>
-      <div className={styles.tieredContainer}>
-        {sponsors.Supporters.map((sponsor, index) => (
-          <SponsorCard key={index} name={sponsor.title} image={sponsor.logo} link={sponsor.link}/>
-        ))}
+      <p>If you'd like to support us, you can either send us an email at <strong>ubcbiot@gmail.com</strong> or donate through our <Link href="https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=BioT+Student+Team+G2553&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaddXGBiB4PLZdRPOJm6lRO7jH17gjgFn5WSvtQk23kFGtDGM_2Q94gb0Of0ig_aem_7Y-lu_nfUjlzVXJ7cnjqhg">crowdfunding</Link> page!</p>
       </div>
-      </div>
+      
     </main>
   );
 }

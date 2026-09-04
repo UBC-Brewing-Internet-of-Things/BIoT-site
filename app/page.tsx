@@ -69,12 +69,13 @@ export default function Page() {
     </div>
     {/*Meet the Subteams, R&D claims first three subteams in subteamsDescription list while ChemE Cube claims the rest*/}
     <h1>Meet the Subteams</h1>
-    <h2>Beer R&D</h2>
-    {beerRnD.map((item,index) => (
-      <SubteamHomepageCard key={index} image={item.image} description={item.description} title={item.title} color = {item.color}/>
-    ))}
+    
     <h2 style={{ marginTop: '80px' }}>ChemE Cube</h2>
     {chemECube.map((item,index) => (
+      <SubteamHomepageCard key={index} image={item.image} description={item.description} title={item.title} color = {item.color}/>
+    ))}
+    <h2>Beer R&D</h2>
+    {beerRnD.map((item,index) => (
       <SubteamHomepageCard key={index} image={item.image} description={item.description} title={item.title} color = {item.color}/>
     ))}
   </main>

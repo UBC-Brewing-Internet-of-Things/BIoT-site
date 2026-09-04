@@ -7,10 +7,13 @@
 }
 
 .image {
+  height: auto;
   width: auto;
   border-radius: 0.5vw;
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
+  max-height: 100px;
+  max-width: 160px;
 }
 
 .image:hover {
@@ -20,5 +23,16 @@
 
 .container p {
   margin-top: 1vw;
-  font-size: clamp(15px, 2vw, 20px);
+  font-size: clamp(15px, 1vw, 20px);
+}
+
+@media (min-width: 1600px) {
+  .container p {
+    display: none;
+  }
+  .container{
+    margin-bottom: 10px;
+  }
+
+
 }
