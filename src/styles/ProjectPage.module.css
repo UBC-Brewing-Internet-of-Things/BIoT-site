@@ -1,8 +1,8 @@
 .header {
   font-weight: 600;
   font-size: clamp(26px, 3.2vw, 40px);
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: var(--page-top);
+  margin-bottom: var(--space-md);
   text-align: center;
   font-family: 'Merriweather', serif;
 }
@@ -47,10 +47,6 @@ button.active {
 }
 
 @media (max-width: 768px) {
-  .header{
-    margin-top: 30%;
-  }
-
   .filter button{
   font-size: clamp(10px, 1vw, 15px);
   }

@@ -1,6 +1,6 @@
 .container {
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: var(--page-top);
+  margin-bottom: var(--space-lg);
   text-align: center;
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
