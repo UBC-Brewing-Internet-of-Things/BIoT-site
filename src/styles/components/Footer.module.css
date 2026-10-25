@@ -53,7 +53,10 @@
 
 .logo {
   width: 300px;
-  height: 130px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 300 / 130;
+  object-fit: contain;
 
 }
 

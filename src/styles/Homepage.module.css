@@ -50,8 +50,10 @@
 .projectContainer{
   background-color: var(--color-white);
   width: 100%;
+  position: relative;
   padding-top: 1px;
-  height: 575px;
+  padding-bottom: 40px;
+  min-height: 575px;
 }
 
 .projectsButtonContainer{
@@ -62,7 +64,7 @@
 
 .leaf{
   position: absolute;
-  top: 950px;
+  top: 40%;
   right: 0;
   width: 10%;
   height: auto;
@@ -119,7 +121,7 @@
 }
 
   .leaf{
-  top: 1100px;
+  top: 40%;
   }
 
 
@@ -132,7 +134,7 @@
 .projectContainer{
   width: 100%;
   padding-top: 1px;
-  height: 750px;
+  min-height: 750px;
 }
 .exploreButton {
   border-radius: 1.75vw;

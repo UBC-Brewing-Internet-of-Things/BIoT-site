@@ -43,12 +43,12 @@ export default function Page() {
         </div>
     </div>
     {/*Current Project Section*/}
-    <Image
+    <div className = {styles.projectContainer}>
+      <Image
         src={Leaf}
         alt="leaf"
         className={styles.leaf}
         />
-    <div className = {styles.projectContainer}>
       <h1>Current Projects</h1>
       <div className = {styles.projectsButtonContainer}>
         <div className = {styles.projects}>

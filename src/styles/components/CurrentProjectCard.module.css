@@ -9,7 +9,8 @@
     font-size: clamp(10px, 1vw, 20px);
     margin: 0;
     white-space: normal;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     text-align: center;
 }
 
@@ -22,8 +23,10 @@
 
 .image{
     width: 350px;
-    height: 270px;
-    
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 350 / 270;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -32,10 +35,10 @@
     }
     .image{
         width: 250px;
-        height: 175px;
+        aspect-ratio: 250 / 175;
     }
     .description{
-        width: 100%;
+        max-width: none;
     }
 }
 

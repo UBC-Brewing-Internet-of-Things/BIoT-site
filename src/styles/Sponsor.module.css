@@ -48,6 +48,7 @@
   border-radius: 1vw;
   transition: all 0.2s ease-in-out;
   width: 500px;
+  max-width: 100%;
   border: 35px solid white;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
   height: auto;
@@ -83,8 +84,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 700px;
-  width: 225px;
+  width: clamp(200px, 20vw, 260px);
+  aspect-ratio: 225 / 700;
   &.diamond{
     background-image: url('../images/logo_images/diamond_tier.png');
   }
@@ -101,6 +102,7 @@
 
 .sponsors{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 5vw;
   margin-bottom: 8%;
