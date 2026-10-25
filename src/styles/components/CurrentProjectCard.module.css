@@ -26,7 +26,7 @@
     max-width: 100%;
     height: auto;
     aspect-ratio: 350 / 270;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
