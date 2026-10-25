@@ -11,7 +11,7 @@ function TeamCard({ name, role, peopleImages }: { name: string, role: string, pe
                 className={styles.teamImage} unoptimized/>
             <div className={styles.teamInfo}>
                 <h3 >{name}</h3>
-                <p style={{ color: 'gray' }}>{role}</p>
+                <p style={{ color: 'var(--color-gray)' }}>{role}</p>
             </div>
         </div>
     );

@@ -19,7 +19,7 @@
 }
 
 .container span{
-  color: #1a1a90;
+  color: var(--color-accent-blue);
 }
 
 .logos{
@@ -47,7 +47,7 @@
 .rectangle{
   border: none;
   height: 8px;
-  background-color: #414170;
+  background-color: var(--color-indigo);
   margin-top: 40px;
   width: 95%;
   margin-bottom: 20px;
@@ -68,14 +68,14 @@
 
 
 .joinButton {
-  background-color: #000033;
+  background-color: var(--color-navy-dark);
   border-radius: 2vw;
   padding: 1.2vw 1.2vw;
   height: fit-content;
   display: inline-block;
   transition: all 0.2s;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 20px;
 }

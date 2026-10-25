@@ -1,6 +1,6 @@
 .footer{
   margin: 0;
-  background-color:#e5f6eb;
+  background-color:var(--color-bg-mint);
   padding-bottom: 5px;
   width: 100%;
 }
@@ -25,7 +25,7 @@
   font-family: Merriweather, serif;
   text-decoration: none;
   display: block;
-  color: black;
+  color: var(--color-black);
   font-size: clamp(12px, 2vw, 20px);
   text-align: center;
   padding: 0px 20px;

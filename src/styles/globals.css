@@ -13,6 +13,24 @@
 /* Left/right page gutter shared by all pages */
 :root {
   --page-gutter: 15%;
+
+  /* Brand */
+  --color-brand-green: #2c6a3e;
+  --color-navy: #142942;
+  --color-navy-dark: #000033;
+  --color-indigo: #414170;
+  --color-accent-blue: #1a1a90;
+
+  /* Backgrounds */
+  --color-bg-sage: #E8EFE9;
+  --color-bg-mint: #e5f6eb;
+  --color-bg-green-card: #e7f2e8;
+  --color-bg-neutral-card: #f5f5f5;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: gray;
 }
 
 @media (max-width: 768px) {

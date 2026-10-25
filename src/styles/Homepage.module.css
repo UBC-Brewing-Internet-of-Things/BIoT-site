@@ -17,7 +17,7 @@
 }
 
 .rectangle_text{
-  background-color: #E8EFE9;
+  background-color: var(--color-bg-sage);
   padding: 2.2% var(--page-gutter) 3% var(--page-gutter);
   text-align: center;
 }
@@ -48,7 +48,7 @@
 }
 
 .projectContainer{
-  background-color: white;
+  background-color: var(--color-white);
   width: 100%;
   padding-top: 1px;
   height: 575px;
@@ -70,14 +70,14 @@
 
 
 .exploreButton {
-  background-color: #142942;
+  background-color: var(--color-navy);
   border-radius: 0.75vw;
   padding: 0.75vw 0.75vw;
   height: fit-content;
   display: inline-block;
   transition: all 0.2s;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 17px;
   width: 110px;

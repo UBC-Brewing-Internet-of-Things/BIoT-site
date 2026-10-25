@@ -7,10 +7,10 @@
   margin: 3% var(--page-gutter);
   padding-right: 2vw;
   &.beige{
-    background-color: #f5f5f5;
+    background-color: var(--color-bg-neutral-card);
   }
   &.green{
-    background-color: #e7f2e8;
+    background-color: var(--color-bg-green-card);
   }
 }
 

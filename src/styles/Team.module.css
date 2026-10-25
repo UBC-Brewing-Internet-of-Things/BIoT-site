@@ -30,7 +30,7 @@
 .rectangle{
   border: none;
   height: 8px;
-  background-color: #414170;
+  background-color: var(--color-indigo);
   margin-top: 40px;
   width: 100%;
   margin-bottom: 20px;
