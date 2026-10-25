@@ -18,6 +18,7 @@ export default function page() {
       <p>Sponsoring UBC Biological Internet of Things means more than supporting an organization; it means investing in the next generation of engineers and innovators. Our team is dedicated to equipping our members with hands-on experience in process engineering, biotechnology, control systems, Internet of Things devices, technical presentations, implementing sustainable practice, and much more. 
         <br /> <br />
       By sponsoring BIoT, you not only contribute to the education and development of aspiring engineers but also support the advancement of innovations in these fields. Join us as we strive to make a positive impact on both our industry and our planet.</p>
+      <p>If you'd like to support us, you can either send us an email at <strong>ubcbiot@gmail.com</strong> or donate through our <Link href="https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=BioT+Student+Team+G2553&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaddXGBiB4PLZdRPOJm6lRO7jH17gjgFn5WSvtQk23kFGtDGM_2Q94gb0Of0ig_aem_7Y-lu_nfUjlzVXJ7cnjqhg">crowdfunding</Link> page!</p>
       {/*Sponsorship Package*/}
       <h3 >Sponsorship Package</h3>
       <div className={styles.info}>
@@ -51,7 +52,6 @@ export default function page() {
           ))}
         </div>
       </div>
-      <p>If you'd like to support us, you can either send us an email at <strong>ubcbiot@gmail.com</strong> or donate through our <Link href="https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=BioT+Student+Team+G2553&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaddXGBiB4PLZdRPOJm6lRO7jH17gjgFn5WSvtQk23kFGtDGM_2Q94gb0Of0ig_aem_7Y-lu_nfUjlzVXJ7cnjqhg">crowdfunding</Link> page!</p>
       </div>
       
     </main>
