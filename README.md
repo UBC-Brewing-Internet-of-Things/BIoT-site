@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UBC BIoT Website
 
-## Getting Started
+Next.js (App Router) static site for UBC Biological Internet of Things.
 
-First, run the development server:
+## Edit and push
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:UBC-Brewing-Internet-of-Things/BIoT-site.git
+cd BIoT-site
+git switch newsite
+npm install
+npm run dev        # open http://localhost:3000, edits reload automatically
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Before pushing, check that it builds:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then commit and push:
 
-## Learn More
+```bash
+git add <files>
+git commit -m "Describe your change"
+git push
+```
 
-To learn more about Next.js, take a look at the following resources:
+**`newsite` is the deployed branch.** Every push to `newsite` builds the site and deploys it to GitHub Pages (see `.github/workflows/deploy.yml`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What goes where
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+.
+├── app/                     Pages (one folder per URL)
+│   ├── layout.tsx           Wraps every page: Navbar, Footer, Join Us button
+│   ├── page.tsx             Home            /
+│   ├── projects/            Projects        /projects
+│   ├── team/                Team            /team
+│   ├── recruitment/         Join Us         /recruitment  (set applicationOpen here)
+│   ├── faq/                 FAQ             /faq
+│   ├── sponsor/             Sponsor Us      /sponsor
+│   ├── biofluorescentBeer/  Project article
+│   └── chemeCube/           Project article
+├── src/
+│   ├── components/          Reusable pieces (Navbar, Footer, cards, ...)
+│   ├── data/                Page content: edit these to change text and lists
+│   │   ├── teamData.ts        team members and roles
+│   │   ├── projectData.ts     projects shown on /projects
+│   │   ├── sponsorsData.ts    sponsors by tier
+│   │   ├── faqData.ts         FAQ questions and answers
+│   │   └── homePageData.ts    subteam descriptions on Home
+│   ├── images/              Images, plus an index.ts in each folder that
+│   │                        maps names to files (add new images there too)
+│   ├── styles/              CSS Modules, one per page or component
+│   │   └── globals.css        fonts, colors, page spacing variables
+│   └── fonts/               Rubik (body) and Merriweather (headings)
+├── public/                  Files served as-is (favicon)
+├── .github/workflows/       Deploy to GitHub Pages
+└── next.config.ts           Static export settings
+```
