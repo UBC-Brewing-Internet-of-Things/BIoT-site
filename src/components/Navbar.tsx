@@ -9,18 +9,19 @@ import { useState } from 'react';
 function Navbar(){
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
 
 
     return(
         <>  
         <div className={styles.navbar}>
           {/*Mobile Specific Style + Reverse menuOpen state on click & change to/from its active style*/}
-          <div className={styles.mobileNavbar} onClick={() => setMenuOpen(!menuOpen)}>
+          <div className={styles.mobileNavbar} onClick={() => setMenuOpen(!menuOpen)} role="button" aria-label="Toggle menu" aria-expanded={menuOpen}>
             <div className = {`${styles.bar1} ${menuOpen ? styles.active : ''}`}></div>
             <div className = {`${styles.bar2} ${menuOpen ? styles.active : ''}`}></div>
             <div className = {`${styles.bar3} ${menuOpen ? styles.active : ''}`}></div>
           </div>
-          <Link href="/"><Image 
+          <Link href="/" onClick={closeMenu}><Image 
             src={Logo}
             alt="UBC BIoT Logo"
             className={styles.navbarLogo} />
@@ -34,16 +35,16 @@ function Navbar(){
             <Link href="/sponsor" className={styles.text}>Sponsor Us</Link> 
           
           </div>
-          <button onClick={() => router.push("/recruitment")} className={styles.joinButton}>Join Us</button>
+          <button onClick={() => { closeMenu(); router.push("/recruitment"); }} className={styles.joinButton}>Join Us</button>
           
         </div>
         {/*Mobile Specific Style*/}
         <div className={`${styles.mobileMenu} ${menuOpen ? styles.active : ''}`}>
-          <Link href="/" className={styles.mobileLink}>Home</Link>
-          <Link href="/projects" className={styles.mobileLink}>Projects</Link>
-          <Link href="/team" className={styles.mobileLink}>Team</Link>
-          <Link href="/sponsor" className={styles.mobileLink}>Sponsor Us</Link> 
-          <Link href="/faq" className={styles.mobileLink}>FAQ</Link>
+          <Link href="/" className={styles.mobileLink} onClick={closeMenu}>Home</Link>
+          <Link href="/projects" className={styles.mobileLink} onClick={closeMenu}>Projects</Link>
+          <Link href="/team" className={styles.mobileLink} onClick={closeMenu}>Team</Link>
+          <Link href="/sponsor" className={styles.mobileLink} onClick={closeMenu}>Sponsor Us</Link> 
+          <Link href="/faq" className={styles.mobileLink} onClick={closeMenu}>FAQ</Link>
         </div>
 
         </>
