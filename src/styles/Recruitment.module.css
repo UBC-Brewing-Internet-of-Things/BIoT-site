@@ -2,8 +2,8 @@
   margin-top: 10%;
   margin-bottom: 5%;
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
 }
 
 .container h1 {

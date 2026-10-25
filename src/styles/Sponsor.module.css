@@ -28,8 +28,8 @@
 }
 
 .page {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
 }
 
 
@@ -90,6 +90,9 @@
   }
   &.silver{
     background-image: url('../images/logo_images/silver_tier.png');
+    .tierTitle{
+      padding-bottom: 60%;
+    }
   }
   &.supporter{
     background-image: url('../images/logo_images/supporter_tier.png');

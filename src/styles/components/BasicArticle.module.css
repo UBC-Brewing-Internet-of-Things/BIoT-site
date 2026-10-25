@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    padding: 5% 12%;
+    padding: 5% var(--page-gutter);
     flex-direction: column;
 }
 

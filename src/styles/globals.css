@@ -10,6 +10,17 @@
   src: url(../fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
 }
 
+/* Left/right page gutter shared by all pages */
+:root {
+  --page-gutter: 15%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --page-gutter: 5%;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;

@@ -1,12 +1,13 @@
 .header {
     font-weight: 600;
-    font-size: clamp(30px, 4vw, 50px);
+    font-size: clamp(26px, 3.2vw, 40px);
     font-family: "Merriweather", serif;
     
     text-align: center;
 }
 .container{
     margin: 100px 0 0 0;
+    padding: 0 var(--page-gutter);
 }
 
 .subtitle {
@@ -31,6 +32,6 @@
   height: 8px;
   background-color: #414170;
   margin-top: 40px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 20px;
 }
