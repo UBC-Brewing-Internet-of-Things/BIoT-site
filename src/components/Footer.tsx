@@ -43,7 +43,7 @@ const pathname = usePathname();
                 </div>
                 
             </div>
-            <p className={styles.copyright}>@ 2025 UBC Biological Internet of Things</p>
+            <p className={styles.copyright}>@ {new Date().getFullYear()} UBC Biological Internet of Things</p>
         </footer>
       </>
       
