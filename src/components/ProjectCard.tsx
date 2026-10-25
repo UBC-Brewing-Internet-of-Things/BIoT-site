@@ -4,10 +4,11 @@ import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
 
-export default function ProjectCard({title, description, date, team, image, link}: {title:string, description:string, date:string, team:string[], image:any, link: string}) {
+export default function ProjectCard({title, description, date, team, image, link}: {title:string, description:string, date:string, team:string[], image:any, link?: string}) {
   const router = useRouter();
   return (
-        <div onClick={() => router.push(link)} className={styles.project} data-category="lab brew">
+        <div onClick={link ? () => router.push(link) : undefined} className={styles.project}
+            style={link ? undefined : {cursor: 'default'}}>
             <div className={styles.headings}>
                 <h3 className={styles.title}>{title}</h3>
                 <p className={styles.date}>{date}</p>
@@ -16,7 +17,7 @@ export default function ProjectCard({title, description, date, team, image, link
             <div className={styles.description}>
                 <Image
                 src={image}
-                alt="Glow-in-the-dark Beer Project"
+                alt={title}
                 className={styles.image}
                 width={400}
                 height={300}

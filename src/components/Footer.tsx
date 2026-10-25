@@ -38,7 +38,7 @@ const pathname = usePathname();
                     <div>
                         <h3 className={styles.heading}>Socials</h3>
                         <Link href="https://www.instagram.com/ubcbiot/" className={styles.text}>Instagram</Link>
-                        <Link href="https://www.linkedin.com/company/brewing-internet-of-things-biot/" className={styles.text}>LinkedIn</Link>
+                        <Link href="https://ca.linkedin.com/company/ubcbiot" className={styles.text}>LinkedIn</Link>
                     </div>
                 </div>
                 

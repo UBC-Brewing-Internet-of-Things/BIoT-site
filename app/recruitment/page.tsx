@@ -8,14 +8,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function page() {
-  const applicationOpen = true; // Change this to true when applications are open and add link to application forms
+  const applicationOpen = false; // Change this to true when applications are open and add link to application forms
   return (
     <main className={styles.container}>
       {/*Conditional display*/}
       {applicationOpen ? (
         <h1>Applications For The 2026/27 Cycle Are <span>OPEN</span></h1>
       ) : (
-        <h1>Applications For The 2026/27 Cycle Are Now Closed.</h1>
+        <>
+          <h1>Applications Closed</h1>
+          <p>Feel free to contact us by email for any questions: <a href="mailto:ubcbiot@gmail.com"><strong>ubcbiot@gmail.com</strong></a></p>
+        </>
       )}
       <p><b>Follow Our Socials For More Information</b></p>
       <div className={styles.logos}>
@@ -25,7 +28,7 @@ export default function page() {
             alt="Instagram Logo"
             className={styles.logo} />
         </Link>
-        <Link href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">
+        <Link href="https://ca.linkedin.com/company/ubcbiot">
           <Image
             src={LinkedinLogo}
             alt="LinkedIn Logo"
@@ -33,8 +36,10 @@ export default function page() {
         </Link>
 
       </div>
-      <h3>Apply Here!</h3>
-      <h3>↓↓↓↓↓↓↓↓↓↓</h3>
+      {applicationOpen && <>
+        <h3>Apply Here!</h3>
+        <h3>↓↓↓↓↓↓↓↓↓↓</h3>
+      </>}
 
       {/*Conditional display*/}
       {applicationOpen &&
@@ -70,7 +75,7 @@ export default function page() {
           class="recruitment-logos" />
       </a>
       <a class="recruitment-logos"
-          href="https://www.linkedin.com/company/brewing-internet-of-things-biot/">
+          href="https://ca.linkedin.com/company/ubcbiot">
           <img src="logo_images/linkedin_logo.png"
           class="recruitment-logos" />
       </a>

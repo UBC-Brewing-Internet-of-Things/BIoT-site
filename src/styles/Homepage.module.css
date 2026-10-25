@@ -18,7 +18,7 @@
 
 .rectangle_text{
   background-color: #E8EFE9;
-  padding: 2.2% 18% 10% 18%;
+  padding: 2.2% 18% 3% 18%;
   text-align: center;
 }
 
@@ -37,7 +37,7 @@
 
 
 .home_logo{
-  width: 50%;
+  width: 42%;
   height: auto;
 }
 
@@ -103,7 +103,7 @@
   }
 
   .home_logo{
-    width: 80%;
+    width: 72%;
   }
   .arrows{
   width: 10%;
@@ -115,7 +115,7 @@
 }
 
   .rectangle_text{
-  padding: 2.2% 18% 10% 18%;
+  padding: 2.2% 18% 3% 18%;
 }
 
   .leaf{
