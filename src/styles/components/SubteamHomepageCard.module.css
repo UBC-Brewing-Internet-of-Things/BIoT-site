@@ -34,7 +34,7 @@
   max-width: 45%;
   height: auto;
   aspect-ratio: 380 / 270;
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
