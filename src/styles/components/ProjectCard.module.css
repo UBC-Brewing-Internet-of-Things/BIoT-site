@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: space-between;
   background: var(--color-white);
-  padding: 3vw;
-  border-radius: 1vw;
+  padding: 32px;
+  border-radius: 14px;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
   transition: all 0.2s;
-  margin: 1vh 0;
+  margin: 8px 0;
 }
 
 .project:hover{
@@ -20,14 +20,14 @@
   flex-direction: row;
 }
 .text {
-  font-size: clamp(11px, 1.2vw, 14px);
+  font-size: 0.9rem;
   width: 100%;
   text-align: left;
   padding: 0 20px;
 }
 .headings {
   width: 100%;
-  margin-bottom: 2vh;
+  margin-bottom: 16px;
   font-family: 'Merriweather', serif;
 }
 .title {
@@ -36,7 +36,7 @@
 }
 .image {
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
-  margin: 0vw 2vw 0vw 0vw;
+  margin: 0 24px 0 0;
   width: 30%;
   align-self: center;
   max-height: max-content;
@@ -56,6 +56,10 @@
 }
 
 @media (max-width: 768px) {
+  .project {
+    padding: 16px;
+  }
+
   .description {
     flex-direction: column;
   }
@@ -63,12 +67,11 @@
   .image {
     width: 100%;
     height: auto;
-    margin: 0 0 2vh 0;
+    margin: 0 0 16px 0;
   }
 
   .text {
     text-align: center;
     padding: 0;
-    font-size: clamp(10px, 3vw, 12px)
   }
 }

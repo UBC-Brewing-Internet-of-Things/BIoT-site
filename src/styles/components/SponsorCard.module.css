@@ -9,7 +9,7 @@
 .image {
   height: auto;
   width: auto;
-  border-radius: 0.5vw;
+  border-radius: 6px;
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
   max-height: 100px;
@@ -23,7 +23,7 @@
 }
 
 .container p {
-  margin-top: 1vw;
+  margin-top: 12px;
   font-size: clamp(15px, 1vw, 20px);
 }
 

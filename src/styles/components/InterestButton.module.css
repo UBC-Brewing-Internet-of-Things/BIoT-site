@@ -14,8 +14,8 @@
 
 .joinButton {
   background-color: var(--color-navy);
-  border-radius: 2vw;
-  padding: 1vw 1.5vw;
+  border-radius: 16px;
+  padding: 14px 22px;
   height: fit-content;
   display: inline-block;
   transition: all 0.2s;
@@ -40,7 +40,7 @@
 
   .joinButton{
     font-size: 20px;
-    padding: 2vw 2.5vw;
+    padding: 8px 12px;
   }
 
 

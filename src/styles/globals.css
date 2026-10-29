@@ -14,8 +14,8 @@
 :root {
   --page-gutter: 15%;
 
-  /* Vertical rhythm: first heading sits below the fixed navbar (9vh) */
-  --navbar-height: 9vh;
+  /* Vertical rhythm: first heading sits below the fixed navbar */
+  --navbar-height: 64px;
   --page-top: calc(var(--navbar-height) + 48px);
   --space-md: 32px;
   --space-lg: 64px;
@@ -51,7 +51,11 @@ html, body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
-  font-size: clamp(13px, 1.5vw, 50px);
+  font-size: clamp(16px, 1vw + 10px, 19px);
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4 {
   line-height: 1.2;
 }
 

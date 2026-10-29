@@ -2,10 +2,10 @@
 .container {
   display: flex;
   justify-content: center;
-  gap: 6vw;
+  gap: 64px;
   vertical-align: middle;
   margin: 3% var(--page-gutter);
-  padding-right: 2vw;
+  padding-right: 24px;
   &.beige{
     background-color: var(--color-bg-neutral-card);
   }
@@ -18,7 +18,6 @@
   width: 100%;
   vertical-align: middle;
   align-content: center;
-  font-size: clamp(10px, 1.5vw, 35px);
 }
 
 .text h3 {
@@ -44,6 +43,7 @@
     align-items: center;
     margin-bottom: 30px;
     padding: 0;
+    gap: 16px;
   }
   
   .image {

@@ -30,7 +30,7 @@
 }
 
 .icon{
-  height: 5vw;
+  height: 64px;
   width: auto;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .logo{
-    height: 5vw;
+    height: 64px;
     width: auto;
   }
 .joinUs {
@@ -69,8 +69,8 @@
 
 .joinButton {
   background-color: var(--color-navy-dark);
-  border-radius: 2vw;
-  padding: 1.2vw 1.2vw;
+  border-radius: 12px;
+  padding: 14px 18px;
   height: fit-content;
   display: inline-block;
   transition: all 0.2s;
@@ -85,15 +85,15 @@
     width: 80%;
     justify-self: center;
     padding: 0;
-    margin-top: 30%;
+    margin-top: var(--page-top);
   }
 
   .icon{
-    height: 10vw;
+    height: 40px;
   }
 
   .logo{
-    height: 10vw;
+    height: 40px;
   }
 
 }

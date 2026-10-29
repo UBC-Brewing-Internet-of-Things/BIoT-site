@@ -30,7 +30,6 @@
   text-align: center;
   padding: 0px 20px;
   transition: all 0.2s ease-in-out;
-  gap: 5vw;
   margin-bottom: 10px;
 
 }
@@ -48,7 +47,7 @@
 .textGroup{
   display: flex;
   text-align: center;
-  gap: 2vw;
+  gap: 24px;
 }
 
 .logo {
@@ -67,7 +66,7 @@
 
   .textGroup {
     flex-direction: column;
-    gap: 1vw;
+    gap: 8px;
   }
 
 }
